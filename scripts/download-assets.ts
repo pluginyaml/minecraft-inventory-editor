@@ -39,14 +39,33 @@ interface AllItemsJson {
     [itemName: string]: ItemDefinition;
 }
 
-interface ModelJson {
-    parent?: string;
-    textures?: {
-        layer0?: string;
-        [key: string]: string | undefined;
-    };
-    [key: string]: unknown;
-}
+type ModelJson =
+    | {
+          parent: "minecraft:item/generated";
+          textures?: {
+              layer0?: string;
+              [key: string]: string | undefined;
+          };
+          [key: string]: unknown;
+      }
+    | {
+          parent: "minecraft:block/cube_all";
+          textures?: {
+              all?: string;
+              layer0?: string;
+              [key: string]: string | undefined;
+          };
+          [key: string]: unknown;
+      }
+    | {
+          parent?: string;
+          textures?: {
+              layer0?: string;
+              all?: string;
+              [key: string]: string | undefined;
+          };
+          [key: string]: unknown;
+      };
 
 function parseVersion(versionString: string): number[] {
     // Convert "1.21.11" to [1, 21, 11]
@@ -145,40 +164,111 @@ function resolveTexturePath(texturePath: string): string {
     return texturePath;
 }
 
-async function getTextureFromModel(
+function compileJavaRenderer(): void {
+    const javaDir = join(process.cwd(), "java-renderer");
+    const javaFile = join(javaDir, "BlockRenderer.java");
+
+    // Javaファイルが存在しない場合はスキップ
+    if (!existsSync(javaFile)) {
+        return;
+    }
+
+    try {
+        console.log("Compiling Java renderer...");
+        execSync(`javac "${javaFile}"`, {
+            cwd: javaDir,
+            stdio: "inherit",
+        });
+        console.log("Java renderer compiled successfully");
+    } catch (error) {
+        console.warn("Failed to compile Java renderer:", error);
+    }
+}
+
+async function renderModel(
     repoRoot: string,
     modelPath: string,
-    visited: Set<string> = new Set(),
-): Promise<string | null> {
-    // Prevent infinite loops
-    if (visited.has(modelPath)) {
-        return null;
-    }
-    visited.add(modelPath);
-
+    outputPath: string,
+): Promise<"rendered" | "copied" | "failed"> {
     const resolvedPath = resolveModelPath(modelPath);
     const modelFilePath = join(repoRoot, resolvedPath);
 
     if (!existsSync(modelFilePath)) {
-        return null;
+        return "failed";
     }
 
     try {
         const modelJson = readFileSync(modelFilePath, "utf8");
         const model: ModelJson = JSON.parse(modelJson);
+        const parent = model.parent ?? "";
 
-        if (model.textures?.layer0) {
-            return model.textures.layer0;
-        }
+        switch (parent) {
+            case "minecraft:block/cube_all": {
+                const texturePath = model.textures?.all || model.textures?.layer0;
+                if (!texturePath) return "failed";
+                const success = await renderCubeAll(repoRoot, texturePath, outputPath);
+                return success ? "rendered" : "failed";
+            }
 
-        if (model.parent) {
-            return await getTextureFromModel(repoRoot, model.parent, visited);
+            case "minecraft:item/generated": {
+                const texturePath = model.textures?.layer0;
+                if (!texturePath) return "failed";
+                const resolvedTexturePath = resolveTexturePath(texturePath);
+                const textureSourcePath = join(repoRoot, resolvedTexturePath);
+                if (!existsSync(textureSourcePath)) return "failed";
+                cpSync(textureSourcePath, outputPath);
+                return "copied";
+            }
+
+            default: {
+                return "failed";
+            }
         }
     } catch (error) {
         console.error(`Error parsing model ${modelPath}:`, error);
+        return "failed";
     }
+}
 
-    return null;
+async function renderCubeAll(
+    repoRoot: string,
+    texturePath: string,
+    outputPath: string,
+): Promise<boolean> {
+    try {
+        const resolvedTexturePath = resolveTexturePath(texturePath);
+        const textureSourcePath = join(repoRoot, resolvedTexturePath);
+
+        if (!existsSync(textureSourcePath)) {
+            return false;
+        }
+
+        // Javaレンダラーを呼び出す
+        const javaDir = join(process.cwd(), "java-renderer");
+        const classFile = join(javaDir, "BlockRenderer.class");
+
+        if (!existsSync(classFile)) {
+            console.warn("Java renderer not compiled. Attempting to compile...");
+            compileJavaRenderer();
+            if (!existsSync(classFile)) {
+                console.error("Java renderer compilation failed");
+                return false;
+            }
+        }
+
+        // 引数形式: <output> <render_type> <...textures>
+        execSync(
+            `java -cp "${javaDir}" BlockRenderer "${outputPath}" "cube_all" "${textureSourcePath}"`,
+            {
+                stdio: "pipe", // エラー出力を抑制（必要に応じて変更）
+            },
+        );
+
+        return existsSync(outputPath);
+    } catch (error) {
+        console.error(`Error rendering cube_all:`, error);
+        return false;
+    }
 }
 
 function itemNameToDisplayName(name: string): string {
@@ -241,9 +331,20 @@ async function downloadAssets(): Promise<void> {
             mkdirSync(outputDir, { recursive: true });
         }
 
+        // Javaレンダラーを事前にコンパイル
+        compileJavaRenderer();
+
         const items: ItemInfo[] = [];
         let copied = 0;
+        let rendered = 0;
         let failed = 0;
+        const logEntries: Array<{
+            itemName: string;
+            texture: string;
+            sourcePath?: string;
+            status: "copied" | "rendered" | "failed";
+            reason?: string;
+        }> = [];
 
         for (let i = 0; i < itemNames.length; i++) {
             const itemName = itemNames[i];
@@ -262,46 +363,64 @@ async function downloadAssets(): Promise<void> {
             }
 
             if (!modelPath) {
-                console.warn(`Skipping ${itemName}: no valid model path`);
+                const reason = "no valid model path";
+                console.warn(`Skipping ${itemName}: ${reason}`);
+                logEntries.push({
+                    itemName,
+                    texture: "",
+                    status: "failed",
+                    reason,
+                });
                 failed++;
                 continue;
             }
-
-            const texturePath = await getTextureFromModel(repoRoot, modelPath);
-            if (!texturePath) {
-                console.warn(`Skipping ${itemName}: could not resolve texture`);
-                failed++;
-                continue;
-            }
-
-            const resolvedTexturePath = resolveTexturePath(texturePath);
-            const textureSourcePath = join(repoRoot, resolvedTexturePath);
 
             const textureName =
-                texturePath.split("/").pop()?.replace("minecraft:", "") ||
+                modelPath.split("/").pop()?.replace("minecraft:", "") ||
                 itemName;
             const fileName = `${textureName}.png`;
             const filePath = join(outputDir, fileName);
 
-            try {
-                cpSync(textureSourcePath, filePath);
+            const result = await renderModel(repoRoot, modelPath, filePath);
+
+            if (result === "copied") {
                 copied++;
-            } catch (error) {
-                console.error(
-                    `Failed to copy texture for ${itemName} from ${textureSourcePath}:`,
-                    error,
-                );
+                logEntries.push({
+                    itemName,
+                    texture: textureName,
+                    sourcePath: modelPath,
+                    status: "copied",
+                });
+            } else if (result === "rendered") {
+                rendered++;
+                logEntries.push({
+                    itemName,
+                    texture: textureName,
+                    sourcePath: modelPath,
+                    status: "rendered",
+                });
+            } else {
+                const reason = "renderModel returned failed";
+                logEntries.push({
+                    itemName,
+                    texture: textureName,
+                    sourcePath: modelPath,
+                    status: "failed",
+                    reason,
+                });
                 failed++;
             }
 
-            items.push({
-                name: itemNameToDisplayName(itemName),
-                texture: textureName,
-                url: `/${type}/${fileName}`,
-            });
+            if (result !== "failed") {
+                items.push({
+                    name: itemNameToDisplayName(itemName),
+                    texture: textureName,
+                    url: `/${type}/${fileName}`,
+                });
+            }
 
             console.log(
-                `\r[${i + 1}/${itemNames.length}] Copied: ${copied}, Failed: ${failed}`,
+                `\r[${i + 1}/${itemNames.length}] Copied: ${copied}, Rendered: ${rendered}, Failed: ${failed}`,
             );
 
             // Small delay to avoid rate limiting
@@ -312,8 +431,14 @@ async function downloadAssets(): Promise<void> {
         writeFileSync(itemsJsonPath, JSON.stringify(items, null, 2));
         console.log(`\n\nItems list saved to: ${itemsJsonPath}`);
 
+        // ログファイルを出力
+        const logPath = join(process.cwd(), "public", "items-copy-log.json");
+        writeFileSync(logPath, JSON.stringify(logEntries, null, 2));
+        console.log(`Log file saved to: ${logPath}`);
+
         console.log(`\nAsset copy complete!`);
         console.log(`  Copied: ${copied}`);
+        console.log(`  Rendered: ${rendered}`);
         console.log(`  Failed: ${failed}`);
         console.log(`  Total items: ${items.length}`);
         console.log(`  Output directory: ${outputDir}`);

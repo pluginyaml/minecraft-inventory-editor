@@ -20,6 +20,11 @@
     "url": "/items/acacia_hanging_sign.png"
   },
   {
+    "name": "Acacia Planks",
+    "texture": "acacia_planks",
+    "url": "/items/acacia_planks.png"
+  },
+  {
     "name": "Acacia Sapling",
     "texture": "acacia_sapling",
     "url": "/items/acacia_sapling.png"
@@ -45,6 +50,11 @@
     "url": "/items/allium.png"
   },
   {
+    "name": "Amethyst Block",
+    "texture": "amethyst_block",
+    "url": "/items/amethyst_block.png"
+  },
+  {
     "name": "Amethyst Cluster",
     "texture": "amethyst_cluster",
     "url": "/items/amethyst_cluster.png"
@@ -53,6 +63,11 @@
     "name": "Amethyst Shard",
     "texture": "amethyst_shard",
     "url": "/items/amethyst_shard.png"
+  },
+  {
+    "name": "Andesite",
+    "texture": "andesite",
+    "url": "/items/andesite.png"
   },
   {
     "name": "Angler Pottery Sherd",
@@ -105,6 +120,11 @@
     "url": "/items/axolotl_spawn_egg.png"
   },
   {
+    "name": "Azalea Leaves",
+    "texture": "azalea_leaves",
+    "url": "/items/azalea_leaves.png"
+  },
+  {
     "name": "Azure Bluet",
     "texture": "azure_bluet",
     "url": "/items/azure_bluet.png"
@@ -113,11 +133,6 @@
     "name": "Baked Potato",
     "texture": "baked_potato",
     "url": "/items/baked_potato.png"
-  },
-  {
-    "name": "Bamboo",
-    "texture": "bamboo",
-    "url": "/items/bamboo.png"
   },
   {
     "name": "Bamboo Chest Raft",
@@ -133,6 +148,16 @@
     "name": "Bamboo Hanging Sign",
     "texture": "bamboo_hanging_sign",
     "url": "/items/bamboo_hanging_sign.png"
+  },
+  {
+    "name": "Bamboo Mosaic",
+    "texture": "bamboo_mosaic",
+    "url": "/items/bamboo_mosaic.png"
+  },
+  {
+    "name": "Bamboo Planks",
+    "texture": "bamboo_planks",
+    "url": "/items/bamboo_planks.png"
   },
   {
     "name": "Bamboo Raft",
@@ -153,6 +178,11 @@
     "name": "Bat Spawn Egg",
     "texture": "bat_spawn_egg",
     "url": "/items/bat_spawn_egg.png"
+  },
+  {
+    "name": "Bedrock",
+    "texture": "bedrock",
+    "url": "/items/bedrock.png"
   },
   {
     "name": "Bee Spawn Egg",
@@ -205,6 +235,11 @@
     "url": "/items/birch_hanging_sign.png"
   },
   {
+    "name": "Birch Planks",
+    "texture": "birch_planks",
+    "url": "/items/birch_planks.png"
+  },
+  {
     "name": "Birch Sapling",
     "texture": "birch_sapling",
     "url": "/items/birch_sapling.png"
@@ -220,6 +255,16 @@
     "url": "/items/black_candle.png"
   },
   {
+    "name": "Black Concrete",
+    "texture": "black_concrete",
+    "url": "/items/black_concrete.png"
+  },
+  {
+    "name": "Black Concrete Powder",
+    "texture": "black_concrete_powder",
+    "url": "/items/black_concrete_powder.png"
+  },
+  {
     "name": "Black Dye",
     "texture": "black_dye",
     "url": "/items/black_dye.png"
@@ -230,9 +275,24 @@
     "url": "/items/black_harness.png"
   },
   {
-    "name": "Black Stained Glass Pane",
+    "name": "Black Stained Glass",
     "texture": "black_stained_glass",
     "url": "/items/black_stained_glass.png"
+  },
+  {
+    "name": "Black Stained Glass Pane",
+    "texture": "black_stained_glass_pane",
+    "url": "/items/black_stained_glass_pane.png"
+  },
+  {
+    "name": "Black Terracotta",
+    "texture": "black_terracotta",
+    "url": "/items/black_terracotta.png"
+  },
+  {
+    "name": "Black Wool",
+    "texture": "black_wool",
+    "url": "/items/black_wool.png"
   },
   {
     "name": "Blade Pottery Sherd",
@@ -245,11 +305,6 @@
     "url": "/items/blaze_powder.png"
   },
   {
-    "name": "Blaze Rod",
-    "texture": "blaze_rod",
-    "url": "/items/blaze_rod.png"
-  },
-  {
     "name": "Blaze Spawn Egg",
     "texture": "blaze_spawn_egg",
     "url": "/items/blaze_spawn_egg.png"
@@ -258,6 +313,16 @@
     "name": "Blue Candle",
     "texture": "blue_candle",
     "url": "/items/blue_candle.png"
+  },
+  {
+    "name": "Blue Concrete",
+    "texture": "blue_concrete",
+    "url": "/items/blue_concrete.png"
+  },
+  {
+    "name": "Blue Concrete Powder",
+    "texture": "blue_concrete_powder",
+    "url": "/items/blue_concrete_powder.png"
   },
   {
     "name": "Blue Dye",
@@ -275,14 +340,34 @@
     "url": "/items/blue_harness.png"
   },
   {
+    "name": "Blue Ice",
+    "texture": "blue_ice",
+    "url": "/items/blue_ice.png"
+  },
+  {
     "name": "Blue Orchid",
     "texture": "blue_orchid",
     "url": "/items/blue_orchid.png"
   },
   {
-    "name": "Blue Stained Glass Pane",
+    "name": "Blue Stained Glass",
     "texture": "blue_stained_glass",
     "url": "/items/blue_stained_glass.png"
+  },
+  {
+    "name": "Blue Stained Glass Pane",
+    "texture": "blue_stained_glass_pane",
+    "url": "/items/blue_stained_glass_pane.png"
+  },
+  {
+    "name": "Blue Terracotta",
+    "texture": "blue_terracotta",
+    "url": "/items/blue_terracotta.png"
+  },
+  {
+    "name": "Blue Wool",
+    "texture": "blue_wool",
+    "url": "/items/blue_wool.png"
   },
   {
     "name": "Bogged Spawn Egg",
@@ -293,11 +378,6 @@
     "name": "Bolt Armor Trim Smithing Template",
     "texture": "bolt_armor_trim_smithing_template",
     "url": "/items/bolt_armor_trim_smithing_template.png"
-  },
-  {
-    "name": "Bone",
-    "texture": "bone",
-    "url": "/items/bone.png"
   },
   {
     "name": "Bone Meal",
@@ -325,6 +405,11 @@
     "url": "/items/brain_coral.png"
   },
   {
+    "name": "Brain Coral Block",
+    "texture": "brain_coral_block",
+    "url": "/items/brain_coral_block.png"
+  },
+  {
     "name": "Brain Coral Fan",
     "texture": "brain_coral_fan",
     "url": "/items/brain_coral_fan.png"
@@ -333,11 +418,6 @@
     "name": "Bread",
     "texture": "bread",
     "url": "/items/bread.png"
-  },
-  {
-    "name": "Breeze Rod",
-    "texture": "breeze_rod",
-    "url": "/items/breeze_rod.png"
   },
   {
     "name": "Breeze Spawn Egg",
@@ -360,9 +440,24 @@
     "url": "/items/brick.png"
   },
   {
+    "name": "Bricks",
+    "texture": "bricks",
+    "url": "/items/bricks.png"
+  },
+  {
     "name": "Brown Candle",
     "texture": "brown_candle",
     "url": "/items/brown_candle.png"
+  },
+  {
+    "name": "Brown Concrete",
+    "texture": "brown_concrete",
+    "url": "/items/brown_concrete.png"
+  },
+  {
+    "name": "Brown Concrete Powder",
+    "texture": "brown_concrete_powder",
+    "url": "/items/brown_concrete_powder.png"
   },
   {
     "name": "Brown Dye",
@@ -385,14 +480,39 @@
     "url": "/items/brown_mushroom.png"
   },
   {
-    "name": "Brown Stained Glass Pane",
+    "name": "Brown Mushroom Block",
+    "texture": "brown_mushroom_block_inventory",
+    "url": "/items/brown_mushroom_block_inventory.png"
+  },
+  {
+    "name": "Brown Stained Glass",
     "texture": "brown_stained_glass",
     "url": "/items/brown_stained_glass.png"
+  },
+  {
+    "name": "Brown Stained Glass Pane",
+    "texture": "brown_stained_glass_pane",
+    "url": "/items/brown_stained_glass_pane.png"
+  },
+  {
+    "name": "Brown Terracotta",
+    "texture": "brown_terracotta",
+    "url": "/items/brown_terracotta.png"
+  },
+  {
+    "name": "Brown Wool",
+    "texture": "brown_wool",
+    "url": "/items/brown_wool.png"
   },
   {
     "name": "Bubble Coral",
     "texture": "bubble_coral",
     "url": "/items/bubble_coral.png"
+  },
+  {
+    "name": "Bubble Coral Block",
+    "texture": "bubble_coral_block",
+    "url": "/items/bubble_coral_block.png"
   },
   {
     "name": "Bubble Coral Fan",
@@ -403,6 +523,11 @@
     "name": "Bucket",
     "texture": "bucket",
     "url": "/items/bucket.png"
+  },
+  {
+    "name": "Budding Amethyst",
+    "texture": "budding_amethyst",
+    "url": "/items/budding_amethyst.png"
   },
   {
     "name": "Burn Pottery Sherd",
@@ -423,6 +548,11 @@
     "name": "Cake",
     "texture": "cake",
     "url": "/items/cake.png"
+  },
+  {
+    "name": "Calcite",
+    "texture": "calcite",
+    "url": "/items/calcite.png"
   },
   {
     "name": "Camel Husk Spawn Egg",
@@ -448,11 +578,6 @@
     "name": "Carrot",
     "texture": "carrot",
     "url": "/items/carrot.png"
-  },
-  {
-    "name": "Carrot On A Stick",
-    "texture": "carrot_on_a_stick",
-    "url": "/items/carrot_on_a_stick.png"
   },
   {
     "name": "Cat Spawn Egg",
@@ -495,6 +620,11 @@
     "url": "/items/cherry_hanging_sign.png"
   },
   {
+    "name": "Cherry Planks",
+    "texture": "cherry_planks",
+    "url": "/items/cherry_planks.png"
+  },
+  {
     "name": "Cherry Sapling",
     "texture": "cherry_sapling",
     "url": "/items/cherry_sapling.png"
@@ -520,9 +650,44 @@
     "url": "/items/chicken_spawn_egg.png"
   },
   {
+    "name": "Chiseled Copper",
+    "texture": "chiseled_copper",
+    "url": "/items/chiseled_copper.png"
+  },
+  {
+    "name": "Chiseled Deepslate",
+    "texture": "chiseled_deepslate",
+    "url": "/items/chiseled_deepslate.png"
+  },
+  {
+    "name": "Chiseled Nether Bricks",
+    "texture": "chiseled_nether_bricks",
+    "url": "/items/chiseled_nether_bricks.png"
+  },
+  {
+    "name": "Chiseled Polished Blackstone",
+    "texture": "chiseled_polished_blackstone",
+    "url": "/items/chiseled_polished_blackstone.png"
+  },
+  {
+    "name": "Chiseled Resin Bricks",
+    "texture": "chiseled_resin_bricks",
+    "url": "/items/chiseled_resin_bricks.png"
+  },
+  {
+    "name": "Chiseled Stone Bricks",
+    "texture": "chiseled_stone_bricks",
+    "url": "/items/chiseled_stone_bricks.png"
+  },
+  {
     "name": "Chorus Fruit",
     "texture": "chorus_fruit",
     "url": "/items/chorus_fruit.png"
+  },
+  {
+    "name": "Clay",
+    "texture": "clay",
+    "url": "/items/clay.png"
   },
   {
     "name": "Clay Ball",
@@ -540,9 +705,34 @@
     "url": "/items/coal.png"
   },
   {
+    "name": "Coal Block",
+    "texture": "coal_block",
+    "url": "/items/coal_block.png"
+  },
+  {
+    "name": "Coal Ore",
+    "texture": "coal_ore",
+    "url": "/items/coal_ore.png"
+  },
+  {
+    "name": "Coarse Dirt",
+    "texture": "coarse_dirt",
+    "url": "/items/coarse_dirt.png"
+  },
+  {
     "name": "Coast Armor Trim Smithing Template",
     "texture": "coast_armor_trim_smithing_template",
     "url": "/items/coast_armor_trim_smithing_template.png"
+  },
+  {
+    "name": "Cobbled Deepslate",
+    "texture": "cobbled_deepslate",
+    "url": "/items/cobbled_deepslate.png"
+  },
+  {
+    "name": "Cobblestone",
+    "texture": "cobblestone",
+    "url": "/items/cobblestone.png"
   },
   {
     "name": "Cobweb",
@@ -553,11 +743,6 @@
     "name": "Cocoa Beans",
     "texture": "cocoa_beans",
     "url": "/items/cocoa_beans.png"
-  },
-  {
-    "name": "Cod",
-    "texture": "cod",
-    "url": "/items/cod.png"
   },
   {
     "name": "Cod Bucket",
@@ -620,14 +805,19 @@
     "url": "/items/cookie.png"
   },
   {
-    "name": "Copper Axe",
-    "texture": "copper_axe",
-    "url": "/items/copper_axe.png"
-  },
-  {
     "name": "Copper Bars",
     "texture": "copper_bars",
     "url": "/items/copper_bars.png"
+  },
+  {
+    "name": "Copper Block",
+    "texture": "copper_block",
+    "url": "/items/copper_block.png"
+  },
+  {
+    "name": "Copper Bulb",
+    "texture": "copper_bulb",
+    "url": "/items/copper_bulb.png"
   },
   {
     "name": "Copper Chain",
@@ -645,9 +835,9 @@
     "url": "/items/copper_golem_spawn_egg.png"
   },
   {
-    "name": "Copper Hoe",
-    "texture": "copper_hoe",
-    "url": "/items/copper_hoe.png"
+    "name": "Copper Grate",
+    "texture": "copper_grate",
+    "url": "/items/copper_grate.png"
   },
   {
     "name": "Copper Horse Armor",
@@ -675,19 +865,9 @@
     "url": "/items/copper_nugget.png"
   },
   {
-    "name": "Copper Pickaxe",
-    "texture": "copper_pickaxe",
-    "url": "/items/copper_pickaxe.png"
-  },
-  {
-    "name": "Copper Shovel",
-    "texture": "copper_shovel",
-    "url": "/items/copper_shovel.png"
-  },
-  {
-    "name": "Copper Sword",
-    "texture": "copper_sword",
-    "url": "/items/copper_sword.png"
+    "name": "Copper Ore",
+    "texture": "copper_ore",
+    "url": "/items/copper_ore.png"
   },
   {
     "name": "Copper Torch",
@@ -703,6 +883,31 @@
     "name": "Cow Spawn Egg",
     "texture": "cow_spawn_egg",
     "url": "/items/cow_spawn_egg.png"
+  },
+  {
+    "name": "Cracked Deepslate Bricks",
+    "texture": "cracked_deepslate_bricks",
+    "url": "/items/cracked_deepslate_bricks.png"
+  },
+  {
+    "name": "Cracked Deepslate Tiles",
+    "texture": "cracked_deepslate_tiles",
+    "url": "/items/cracked_deepslate_tiles.png"
+  },
+  {
+    "name": "Cracked Nether Bricks",
+    "texture": "cracked_nether_bricks",
+    "url": "/items/cracked_nether_bricks.png"
+  },
+  {
+    "name": "Cracked Polished Blackstone Bricks",
+    "texture": "cracked_polished_blackstone_bricks",
+    "url": "/items/cracked_polished_blackstone_bricks.png"
+  },
+  {
+    "name": "Cracked Stone Bricks",
+    "texture": "cracked_stone_bricks",
+    "url": "/items/cracked_stone_bricks.png"
   },
   {
     "name": "Creaking Spawn Egg",
@@ -735,6 +940,11 @@
     "url": "/items/crimson_hanging_sign.png"
   },
   {
+    "name": "Crimson Planks",
+    "texture": "crimson_planks",
+    "url": "/items/crimson_planks.png"
+  },
+  {
     "name": "Crimson Roots",
     "texture": "crimson_roots",
     "url": "/items/crimson_roots.png"
@@ -745,9 +955,29 @@
     "url": "/items/crimson_sign.png"
   },
   {
+    "name": "Crying Obsidian",
+    "texture": "crying_obsidian",
+    "url": "/items/crying_obsidian.png"
+  },
+  {
+    "name": "Cut Copper",
+    "texture": "cut_copper",
+    "url": "/items/cut_copper.png"
+  },
+  {
     "name": "Cyan Candle",
     "texture": "cyan_candle",
     "url": "/items/cyan_candle.png"
+  },
+  {
+    "name": "Cyan Concrete",
+    "texture": "cyan_concrete",
+    "url": "/items/cyan_concrete.png"
+  },
+  {
+    "name": "Cyan Concrete Powder",
+    "texture": "cyan_concrete_powder",
+    "url": "/items/cyan_concrete_powder.png"
   },
   {
     "name": "Cyan Dye",
@@ -760,9 +990,24 @@
     "url": "/items/cyan_harness.png"
   },
   {
-    "name": "Cyan Stained Glass Pane",
+    "name": "Cyan Stained Glass",
     "texture": "cyan_stained_glass",
     "url": "/items/cyan_stained_glass.png"
+  },
+  {
+    "name": "Cyan Stained Glass Pane",
+    "texture": "cyan_stained_glass_pane",
+    "url": "/items/cyan_stained_glass_pane.png"
+  },
+  {
+    "name": "Cyan Terracotta",
+    "texture": "cyan_terracotta",
+    "url": "/items/cyan_terracotta.png"
+  },
+  {
+    "name": "Cyan Wool",
+    "texture": "cyan_wool",
+    "url": "/items/cyan_wool.png"
   },
   {
     "name": "Dandelion",
@@ -795,6 +1040,11 @@
     "url": "/items/dark_oak_hanging_sign.png"
   },
   {
+    "name": "Dark Oak Planks",
+    "texture": "dark_oak_planks",
+    "url": "/items/dark_oak_planks.png"
+  },
+  {
     "name": "Dark Oak Sapling",
     "texture": "dark_oak_sapling",
     "url": "/items/dark_oak_sapling.png"
@@ -805,9 +1055,19 @@
     "url": "/items/dark_oak_sign.png"
   },
   {
+    "name": "Dark Prismarine",
+    "texture": "dark_prismarine",
+    "url": "/items/dark_prismarine.png"
+  },
+  {
     "name": "Dead Brain Coral",
     "texture": "dead_brain_coral",
     "url": "/items/dead_brain_coral.png"
+  },
+  {
+    "name": "Dead Brain Coral Block",
+    "texture": "dead_brain_coral_block",
+    "url": "/items/dead_brain_coral_block.png"
   },
   {
     "name": "Dead Brain Coral Fan",
@@ -818,6 +1078,11 @@
     "name": "Dead Bubble Coral",
     "texture": "dead_bubble_coral",
     "url": "/items/dead_bubble_coral.png"
+  },
+  {
+    "name": "Dead Bubble Coral Block",
+    "texture": "dead_bubble_coral_block",
+    "url": "/items/dead_bubble_coral_block.png"
   },
   {
     "name": "Dead Bubble Coral Fan",
@@ -835,6 +1100,11 @@
     "url": "/items/dead_fire_coral.png"
   },
   {
+    "name": "Dead Fire Coral Block",
+    "texture": "dead_fire_coral_block",
+    "url": "/items/dead_fire_coral_block.png"
+  },
+  {
     "name": "Dead Fire Coral Fan",
     "texture": "dead_fire_coral_fan",
     "url": "/items/dead_fire_coral_fan.png"
@@ -843,6 +1113,11 @@
     "name": "Dead Horn Coral",
     "texture": "dead_horn_coral",
     "url": "/items/dead_horn_coral.png"
+  },
+  {
+    "name": "Dead Horn Coral Block",
+    "texture": "dead_horn_coral_block",
+    "url": "/items/dead_horn_coral_block.png"
   },
   {
     "name": "Dead Horn Coral Fan",
@@ -855,14 +1130,64 @@
     "url": "/items/dead_tube_coral.png"
   },
   {
+    "name": "Dead Tube Coral Block",
+    "texture": "dead_tube_coral_block",
+    "url": "/items/dead_tube_coral_block.png"
+  },
+  {
     "name": "Dead Tube Coral Fan",
     "texture": "dead_tube_coral_fan",
     "url": "/items/dead_tube_coral_fan.png"
   },
   {
-    "name": "Debug Stick",
-    "texture": "stick",
-    "url": "/items/stick.png"
+    "name": "Deepslate Bricks",
+    "texture": "deepslate_bricks",
+    "url": "/items/deepslate_bricks.png"
+  },
+  {
+    "name": "Deepslate Coal Ore",
+    "texture": "deepslate_coal_ore",
+    "url": "/items/deepslate_coal_ore.png"
+  },
+  {
+    "name": "Deepslate Copper Ore",
+    "texture": "deepslate_copper_ore",
+    "url": "/items/deepslate_copper_ore.png"
+  },
+  {
+    "name": "Deepslate Diamond Ore",
+    "texture": "deepslate_diamond_ore",
+    "url": "/items/deepslate_diamond_ore.png"
+  },
+  {
+    "name": "Deepslate Emerald Ore",
+    "texture": "deepslate_emerald_ore",
+    "url": "/items/deepslate_emerald_ore.png"
+  },
+  {
+    "name": "Deepslate Gold Ore",
+    "texture": "deepslate_gold_ore",
+    "url": "/items/deepslate_gold_ore.png"
+  },
+  {
+    "name": "Deepslate Iron Ore",
+    "texture": "deepslate_iron_ore",
+    "url": "/items/deepslate_iron_ore.png"
+  },
+  {
+    "name": "Deepslate Lapis Ore",
+    "texture": "deepslate_lapis_ore",
+    "url": "/items/deepslate_lapis_ore.png"
+  },
+  {
+    "name": "Deepslate Redstone Ore",
+    "texture": "deepslate_redstone_ore",
+    "url": "/items/deepslate_redstone_ore.png"
+  },
+  {
+    "name": "Deepslate Tiles",
+    "texture": "deepslate_tiles",
+    "url": "/items/deepslate_tiles.png"
   },
   {
     "name": "Detector Rail",
@@ -875,14 +1200,9 @@
     "url": "/items/diamond.png"
   },
   {
-    "name": "Diamond Axe",
-    "texture": "diamond_axe",
-    "url": "/items/diamond_axe.png"
-  },
-  {
-    "name": "Diamond Hoe",
-    "texture": "diamond_hoe",
-    "url": "/items/diamond_hoe.png"
+    "name": "Diamond Block",
+    "texture": "diamond_block",
+    "url": "/items/diamond_block.png"
   },
   {
     "name": "Diamond Horse Armor",
@@ -895,19 +1215,19 @@
     "url": "/items/diamond_nautilus_armor.png"
   },
   {
-    "name": "Diamond Pickaxe",
-    "texture": "diamond_pickaxe",
-    "url": "/items/diamond_pickaxe.png"
+    "name": "Diamond Ore",
+    "texture": "diamond_ore",
+    "url": "/items/diamond_ore.png"
   },
   {
-    "name": "Diamond Shovel",
-    "texture": "diamond_shovel",
-    "url": "/items/diamond_shovel.png"
+    "name": "Diorite",
+    "texture": "diorite",
+    "url": "/items/diorite.png"
   },
   {
-    "name": "Diamond Sword",
-    "texture": "diamond_sword",
-    "url": "/items/diamond_sword.png"
+    "name": "Dirt",
+    "texture": "dirt",
+    "url": "/items/dirt.png"
   },
   {
     "name": "Disc Fragment 5",
@@ -933,6 +1253,11 @@
     "name": "Dried Kelp",
     "texture": "dried_kelp",
     "url": "/items/dried_kelp.png"
+  },
+  {
+    "name": "Dripstone Block",
+    "texture": "dripstone_block",
+    "url": "/items/dripstone_block.png"
   },
   {
     "name": "Drowned Spawn Egg",
@@ -965,19 +1290,39 @@
     "url": "/items/emerald.png"
   },
   {
+    "name": "Emerald Block",
+    "texture": "emerald_block",
+    "url": "/items/emerald_block.png"
+  },
+  {
+    "name": "Emerald Ore",
+    "texture": "emerald_ore",
+    "url": "/items/emerald_ore.png"
+  },
+  {
     "name": "Enchanted Book",
     "texture": "enchanted_book",
     "url": "/items/enchanted_book.png"
   },
   {
     "name": "Enchanted Golden Apple",
-    "texture": "golden_apple",
-    "url": "/items/golden_apple.png"
+    "texture": "enchanted_golden_apple",
+    "url": "/items/enchanted_golden_apple.png"
   },
   {
     "name": "End Crystal",
     "texture": "end_crystal",
     "url": "/items/end_crystal.png"
+  },
+  {
+    "name": "End Stone",
+    "texture": "end_stone",
+    "url": "/items/end_stone.png"
+  },
+  {
+    "name": "End Stone Bricks",
+    "texture": "end_stone_bricks",
+    "url": "/items/end_stone_bricks.png"
   },
   {
     "name": "Ender Dragon Spawn Egg",
@@ -1020,9 +1365,24 @@
     "url": "/items/explorer_pottery_sherd.png"
   },
   {
+    "name": "Exposed Chiseled Copper",
+    "texture": "exposed_chiseled_copper",
+    "url": "/items/exposed_chiseled_copper.png"
+  },
+  {
+    "name": "Exposed Copper",
+    "texture": "exposed_copper",
+    "url": "/items/exposed_copper.png"
+  },
+  {
     "name": "Exposed Copper Bars",
     "texture": "exposed_copper_bars",
     "url": "/items/exposed_copper_bars.png"
+  },
+  {
+    "name": "Exposed Copper Bulb",
+    "texture": "exposed_copper_bulb",
+    "url": "/items/exposed_copper_bulb.png"
   },
   {
     "name": "Exposed Copper Chain",
@@ -1035,19 +1395,24 @@
     "url": "/items/exposed_copper_door.png"
   },
   {
+    "name": "Exposed Copper Grate",
+    "texture": "exposed_copper_grate",
+    "url": "/items/exposed_copper_grate.png"
+  },
+  {
     "name": "Exposed Copper Lantern",
     "texture": "exposed_copper_lantern",
     "url": "/items/exposed_copper_lantern.png"
   },
   {
+    "name": "Exposed Cut Copper",
+    "texture": "exposed_cut_copper",
+    "url": "/items/exposed_cut_copper.png"
+  },
+  {
     "name": "Eye Armor Trim Smithing Template",
     "texture": "eye_armor_trim_smithing_template",
     "url": "/items/eye_armor_trim_smithing_template.png"
-  },
-  {
-    "name": "Feather",
-    "texture": "feather",
-    "url": "/items/feather.png"
   },
   {
     "name": "Fermented Spider Eye",
@@ -1078,6 +1443,11 @@
     "name": "Fire Coral",
     "texture": "fire_coral",
     "url": "/items/fire_coral.png"
+  },
+  {
+    "name": "Fire Coral Block",
+    "texture": "fire_coral_block",
+    "url": "/items/fire_coral_block.png"
   },
   {
     "name": "Fire Coral Fan",
@@ -1135,6 +1505,11 @@
     "url": "/items/flower_pot.png"
   },
   {
+    "name": "Flowering Azalea Leaves",
+    "texture": "flowering_azalea_leaves",
+    "url": "/items/flowering_azalea_leaves.png"
+  },
+  {
     "name": "Fox Spawn Egg",
     "texture": "fox_spawn_egg",
     "url": "/items/fox_spawn_egg.png"
@@ -1170,14 +1545,24 @@
     "url": "/items/ghast_tear.png"
   },
   {
+    "name": "Gilded Blackstone",
+    "texture": "gilded_blackstone",
+    "url": "/items/gilded_blackstone.png"
+  },
+  {
+    "name": "Glass",
+    "texture": "glass",
+    "url": "/items/glass.png"
+  },
+  {
     "name": "Glass Bottle",
     "texture": "glass_bottle",
     "url": "/items/glass_bottle.png"
   },
   {
     "name": "Glass Pane",
-    "texture": "glass",
-    "url": "/items/glass.png"
+    "texture": "glass_pane",
+    "url": "/items/glass_pane.png"
   },
   {
     "name": "Glistering Melon Slice",
@@ -1215,6 +1600,11 @@
     "url": "/items/glow_squid_spawn_egg.png"
   },
   {
+    "name": "Glowstone",
+    "texture": "glowstone",
+    "url": "/items/glowstone.png"
+  },
+  {
     "name": "Glowstone Dust",
     "texture": "glowstone_dust",
     "url": "/items/glowstone_dust.png"
@@ -1223,6 +1613,11 @@
     "name": "Goat Spawn Egg",
     "texture": "goat_spawn_egg",
     "url": "/items/goat_spawn_egg.png"
+  },
+  {
+    "name": "Gold Block",
+    "texture": "gold_block",
+    "url": "/items/gold_block.png"
   },
   {
     "name": "Gold Ingot",
@@ -1235,24 +1630,19 @@
     "url": "/items/gold_nugget.png"
   },
   {
+    "name": "Gold Ore",
+    "texture": "gold_ore",
+    "url": "/items/gold_ore.png"
+  },
+  {
     "name": "Golden Apple",
     "texture": "golden_apple",
     "url": "/items/golden_apple.png"
   },
   {
-    "name": "Golden Axe",
-    "texture": "golden_axe",
-    "url": "/items/golden_axe.png"
-  },
-  {
     "name": "Golden Carrot",
     "texture": "golden_carrot",
     "url": "/items/golden_carrot.png"
-  },
-  {
-    "name": "Golden Hoe",
-    "texture": "golden_hoe",
-    "url": "/items/golden_hoe.png"
   },
   {
     "name": "Golden Horse Armor",
@@ -1265,24 +1655,29 @@
     "url": "/items/golden_nautilus_armor.png"
   },
   {
-    "name": "Golden Pickaxe",
-    "texture": "golden_pickaxe",
-    "url": "/items/golden_pickaxe.png"
+    "name": "Granite",
+    "texture": "granite",
+    "url": "/items/granite.png"
   },
   {
-    "name": "Golden Shovel",
-    "texture": "golden_shovel",
-    "url": "/items/golden_shovel.png"
-  },
-  {
-    "name": "Golden Sword",
-    "texture": "golden_sword",
-    "url": "/items/golden_sword.png"
+    "name": "Gravel",
+    "texture": "gravel",
+    "url": "/items/gravel.png"
   },
   {
     "name": "Gray Candle",
     "texture": "gray_candle",
     "url": "/items/gray_candle.png"
+  },
+  {
+    "name": "Gray Concrete",
+    "texture": "gray_concrete",
+    "url": "/items/gray_concrete.png"
+  },
+  {
+    "name": "Gray Concrete Powder",
+    "texture": "gray_concrete_powder",
+    "url": "/items/gray_concrete_powder.png"
   },
   {
     "name": "Gray Dye",
@@ -1295,14 +1690,39 @@
     "url": "/items/gray_harness.png"
   },
   {
-    "name": "Gray Stained Glass Pane",
+    "name": "Gray Stained Glass",
     "texture": "gray_stained_glass",
     "url": "/items/gray_stained_glass.png"
+  },
+  {
+    "name": "Gray Stained Glass Pane",
+    "texture": "gray_stained_glass_pane",
+    "url": "/items/gray_stained_glass_pane.png"
+  },
+  {
+    "name": "Gray Terracotta",
+    "texture": "gray_terracotta",
+    "url": "/items/gray_terracotta.png"
+  },
+  {
+    "name": "Gray Wool",
+    "texture": "gray_wool",
+    "url": "/items/gray_wool.png"
   },
   {
     "name": "Green Candle",
     "texture": "green_candle",
     "url": "/items/green_candle.png"
+  },
+  {
+    "name": "Green Concrete",
+    "texture": "green_concrete",
+    "url": "/items/green_concrete.png"
+  },
+  {
+    "name": "Green Concrete Powder",
+    "texture": "green_concrete_powder",
+    "url": "/items/green_concrete_powder.png"
   },
   {
     "name": "Green Dye",
@@ -1315,9 +1735,24 @@
     "url": "/items/green_harness.png"
   },
   {
-    "name": "Green Stained Glass Pane",
+    "name": "Green Stained Glass",
     "texture": "green_stained_glass",
     "url": "/items/green_stained_glass.png"
+  },
+  {
+    "name": "Green Stained Glass Pane",
+    "texture": "green_stained_glass_pane",
+    "url": "/items/green_stained_glass_pane.png"
+  },
+  {
+    "name": "Green Terracotta",
+    "texture": "green_terracotta",
+    "url": "/items/green_terracotta.png"
+  },
+  {
+    "name": "Green Wool",
+    "texture": "green_wool",
+    "url": "/items/green_wool.png"
   },
   {
     "name": "Guardian Spawn Egg",
@@ -1338,11 +1773,6 @@
     "name": "Guster Pottery Sherd",
     "texture": "guster_pottery_sherd",
     "url": "/items/guster_pottery_sherd.png"
-  },
-  {
-    "name": "Hanging Roots",
-    "texture": "hanging_roots",
-    "url": "/items/hanging_roots.png"
   },
   {
     "name": "Happy Ghast Spawn Egg",
@@ -1380,6 +1810,11 @@
     "url": "/items/honeycomb.png"
   },
   {
+    "name": "Honeycomb Block",
+    "texture": "honeycomb_block",
+    "url": "/items/honeycomb_block.png"
+  },
+  {
     "name": "Hopper",
     "texture": "hopper",
     "url": "/items/hopper.png"
@@ -1393,6 +1828,11 @@
     "name": "Horn Coral",
     "texture": "horn_coral",
     "url": "/items/horn_coral.png"
+  },
+  {
+    "name": "Horn Coral Block",
+    "texture": "horn_coral_block",
+    "url": "/items/horn_coral_block.png"
   },
   {
     "name": "Horn Coral Fan",
@@ -1420,19 +1860,54 @@
     "url": "/items/husk_spawn_egg.png"
   },
   {
+    "name": "Ice",
+    "texture": "ice",
+    "url": "/items/ice.png"
+  },
+  {
+    "name": "Infested Chiseled Stone Bricks",
+    "texture": "chiseled_stone_bricks",
+    "url": "/items/chiseled_stone_bricks.png"
+  },
+  {
+    "name": "Infested Cobblestone",
+    "texture": "cobblestone",
+    "url": "/items/cobblestone.png"
+  },
+  {
+    "name": "Infested Cracked Stone Bricks",
+    "texture": "cracked_stone_bricks",
+    "url": "/items/cracked_stone_bricks.png"
+  },
+  {
+    "name": "Infested Mossy Stone Bricks",
+    "texture": "mossy_stone_bricks",
+    "url": "/items/mossy_stone_bricks.png"
+  },
+  {
+    "name": "Infested Stone",
+    "texture": "stone",
+    "url": "/items/stone.png"
+  },
+  {
+    "name": "Infested Stone Bricks",
+    "texture": "stone_bricks",
+    "url": "/items/stone_bricks.png"
+  },
+  {
     "name": "Ink Sac",
     "texture": "ink_sac",
     "url": "/items/ink_sac.png"
   },
   {
-    "name": "Iron Axe",
-    "texture": "iron_axe",
-    "url": "/items/iron_axe.png"
-  },
-  {
     "name": "Iron Bars",
     "texture": "iron_bars",
     "url": "/items/iron_bars.png"
+  },
+  {
+    "name": "Iron Block",
+    "texture": "iron_block",
+    "url": "/items/iron_block.png"
   },
   {
     "name": "Iron Chain",
@@ -1448,11 +1923,6 @@
     "name": "Iron Golem Spawn Egg",
     "texture": "iron_golem_spawn_egg",
     "url": "/items/iron_golem_spawn_egg.png"
-  },
-  {
-    "name": "Iron Hoe",
-    "texture": "iron_hoe",
-    "url": "/items/iron_hoe.png"
   },
   {
     "name": "Iron Horse Armor",
@@ -1475,19 +1945,9 @@
     "url": "/items/iron_nugget.png"
   },
   {
-    "name": "Iron Pickaxe",
-    "texture": "iron_pickaxe",
-    "url": "/items/iron_pickaxe.png"
-  },
-  {
-    "name": "Iron Shovel",
-    "texture": "iron_shovel",
-    "url": "/items/iron_shovel.png"
-  },
-  {
-    "name": "Iron Sword",
-    "texture": "iron_sword",
-    "url": "/items/iron_sword.png"
+    "name": "Iron Ore",
+    "texture": "iron_ore",
+    "url": "/items/iron_ore.png"
   },
   {
     "name": "Item Frame",
@@ -1513,6 +1973,11 @@
     "name": "Jungle Hanging Sign",
     "texture": "jungle_hanging_sign",
     "url": "/items/jungle_hanging_sign.png"
+  },
+  {
+    "name": "Jungle Planks",
+    "texture": "jungle_planks",
+    "url": "/items/jungle_planks.png"
   },
   {
     "name": "Jungle Sapling",
@@ -1545,29 +2010,29 @@
     "url": "/items/lantern.png"
   },
   {
+    "name": "Lapis Block",
+    "texture": "lapis_block",
+    "url": "/items/lapis_block.png"
+  },
+  {
     "name": "Lapis Lazuli",
     "texture": "lapis_lazuli",
     "url": "/items/lapis_lazuli.png"
   },
   {
-    "name": "Large Amethyst Bud",
-    "texture": "large_amethyst_bud",
-    "url": "/items/large_amethyst_bud.png"
+    "name": "Lapis Ore",
+    "texture": "lapis_ore",
+    "url": "/items/lapis_ore.png"
   },
   {
     "name": "Large Fern",
-    "texture": "large_fern_top",
-    "url": "/items/large_fern_top.png"
+    "texture": "large_fern",
+    "url": "/items/large_fern.png"
   },
   {
     "name": "Lava Bucket",
     "texture": "lava_bucket",
     "url": "/items/lava_bucket.png"
-  },
-  {
-    "name": "Lead",
-    "texture": "lead",
-    "url": "/items/lead.png"
   },
   {
     "name": "Leaf Litter",
@@ -1595,6 +2060,16 @@
     "url": "/items/light_blue_candle.png"
   },
   {
+    "name": "Light Blue Concrete",
+    "texture": "light_blue_concrete",
+    "url": "/items/light_blue_concrete.png"
+  },
+  {
+    "name": "Light Blue Concrete Powder",
+    "texture": "light_blue_concrete_powder",
+    "url": "/items/light_blue_concrete_powder.png"
+  },
+  {
     "name": "Light Blue Dye",
     "texture": "light_blue_dye",
     "url": "/items/light_blue_dye.png"
@@ -1605,14 +2080,39 @@
     "url": "/items/light_blue_harness.png"
   },
   {
-    "name": "Light Blue Stained Glass Pane",
+    "name": "Light Blue Stained Glass",
     "texture": "light_blue_stained_glass",
     "url": "/items/light_blue_stained_glass.png"
+  },
+  {
+    "name": "Light Blue Stained Glass Pane",
+    "texture": "light_blue_stained_glass_pane",
+    "url": "/items/light_blue_stained_glass_pane.png"
+  },
+  {
+    "name": "Light Blue Terracotta",
+    "texture": "light_blue_terracotta",
+    "url": "/items/light_blue_terracotta.png"
+  },
+  {
+    "name": "Light Blue Wool",
+    "texture": "light_blue_wool",
+    "url": "/items/light_blue_wool.png"
   },
   {
     "name": "Light Gray Candle",
     "texture": "light_gray_candle",
     "url": "/items/light_gray_candle.png"
+  },
+  {
+    "name": "Light Gray Concrete",
+    "texture": "light_gray_concrete",
+    "url": "/items/light_gray_concrete.png"
+  },
+  {
+    "name": "Light Gray Concrete Powder",
+    "texture": "light_gray_concrete_powder",
+    "url": "/items/light_gray_concrete_powder.png"
   },
   {
     "name": "Light Gray Dye",
@@ -1625,14 +2125,29 @@
     "url": "/items/light_gray_harness.png"
   },
   {
-    "name": "Light Gray Stained Glass Pane",
+    "name": "Light Gray Stained Glass",
     "texture": "light_gray_stained_glass",
     "url": "/items/light_gray_stained_glass.png"
   },
   {
+    "name": "Light Gray Stained Glass Pane",
+    "texture": "light_gray_stained_glass_pane",
+    "url": "/items/light_gray_stained_glass_pane.png"
+  },
+  {
+    "name": "Light Gray Terracotta",
+    "texture": "light_gray_terracotta",
+    "url": "/items/light_gray_terracotta.png"
+  },
+  {
+    "name": "Light Gray Wool",
+    "texture": "light_gray_wool",
+    "url": "/items/light_gray_wool.png"
+  },
+  {
     "name": "Lilac",
-    "texture": "lilac_top",
-    "url": "/items/lilac_top.png"
+    "texture": "lilac",
+    "url": "/items/lilac.png"
   },
   {
     "name": "Lily Of The Valley",
@@ -1650,6 +2165,16 @@
     "url": "/items/lime_candle.png"
   },
   {
+    "name": "Lime Concrete",
+    "texture": "lime_concrete",
+    "url": "/items/lime_concrete.png"
+  },
+  {
+    "name": "Lime Concrete Powder",
+    "texture": "lime_concrete_powder",
+    "url": "/items/lime_concrete_powder.png"
+  },
+  {
     "name": "Lime Dye",
     "texture": "lime_dye",
     "url": "/items/lime_dye.png"
@@ -1660,14 +2185,29 @@
     "url": "/items/lime_harness.png"
   },
   {
-    "name": "Lime Stained Glass Pane",
+    "name": "Lime Stained Glass",
     "texture": "lime_stained_glass",
     "url": "/items/lime_stained_glass.png"
   },
   {
+    "name": "Lime Stained Glass Pane",
+    "texture": "lime_stained_glass_pane",
+    "url": "/items/lime_stained_glass_pane.png"
+  },
+  {
+    "name": "Lime Terracotta",
+    "texture": "lime_terracotta",
+    "url": "/items/lime_terracotta.png"
+  },
+  {
+    "name": "Lime Wool",
+    "texture": "lime_wool",
+    "url": "/items/lime_wool.png"
+  },
+  {
     "name": "Lingering Potion",
-    "texture": "potion_overlay",
-    "url": "/items/potion_overlay.png"
+    "texture": "lingering_potion",
+    "url": "/items/lingering_potion.png"
   },
   {
     "name": "Llama Spawn Egg",
@@ -1675,14 +2215,19 @@
     "url": "/items/llama_spawn_egg.png"
   },
   {
-    "name": "Mace",
-    "texture": "mace",
-    "url": "/items/mace.png"
-  },
-  {
     "name": "Magenta Candle",
     "texture": "magenta_candle",
     "url": "/items/magenta_candle.png"
+  },
+  {
+    "name": "Magenta Concrete",
+    "texture": "magenta_concrete",
+    "url": "/items/magenta_concrete.png"
+  },
+  {
+    "name": "Magenta Concrete Powder",
+    "texture": "magenta_concrete_powder",
+    "url": "/items/magenta_concrete_powder.png"
   },
   {
     "name": "Magenta Dye",
@@ -1695,9 +2240,29 @@
     "url": "/items/magenta_harness.png"
   },
   {
-    "name": "Magenta Stained Glass Pane",
+    "name": "Magenta Stained Glass",
     "texture": "magenta_stained_glass",
     "url": "/items/magenta_stained_glass.png"
+  },
+  {
+    "name": "Magenta Stained Glass Pane",
+    "texture": "magenta_stained_glass_pane",
+    "url": "/items/magenta_stained_glass_pane.png"
+  },
+  {
+    "name": "Magenta Terracotta",
+    "texture": "magenta_terracotta",
+    "url": "/items/magenta_terracotta.png"
+  },
+  {
+    "name": "Magenta Wool",
+    "texture": "magenta_wool",
+    "url": "/items/magenta_wool.png"
+  },
+  {
+    "name": "Magma Block",
+    "texture": "magma_block",
+    "url": "/items/magma_block.png"
   },
   {
     "name": "Magma Cream",
@@ -1730,6 +2295,11 @@
     "url": "/items/mangrove_hanging_sign.png"
   },
   {
+    "name": "Mangrove Planks",
+    "texture": "mangrove_planks",
+    "url": "/items/mangrove_planks.png"
+  },
+  {
     "name": "Mangrove Propagule",
     "texture": "mangrove_propagule",
     "url": "/items/mangrove_propagule.png"
@@ -1743,11 +2313,6 @@
     "name": "Map",
     "texture": "map",
     "url": "/items/map.png"
-  },
-  {
-    "name": "Medium Amethyst Bud",
-    "texture": "medium_amethyst_bud",
-    "url": "/items/medium_amethyst_bud.png"
   },
   {
     "name": "Melon Seeds",
@@ -1785,9 +2350,34 @@
     "url": "/items/mooshroom_spawn_egg.png"
   },
   {
+    "name": "Moss Block",
+    "texture": "moss_block",
+    "url": "/items/moss_block.png"
+  },
+  {
+    "name": "Mossy Cobblestone",
+    "texture": "mossy_cobblestone",
+    "url": "/items/mossy_cobblestone.png"
+  },
+  {
+    "name": "Mossy Stone Bricks",
+    "texture": "mossy_stone_bricks",
+    "url": "/items/mossy_stone_bricks.png"
+  },
+  {
     "name": "Mourner Pottery Sherd",
     "texture": "mourner_pottery_sherd",
     "url": "/items/mourner_pottery_sherd.png"
+  },
+  {
+    "name": "Mud",
+    "texture": "mud",
+    "url": "/items/mud.png"
+  },
+  {
+    "name": "Mud Bricks",
+    "texture": "mud_bricks",
+    "url": "/items/mud_bricks.png"
   },
   {
     "name": "Mule Spawn Egg",
@@ -1795,114 +2385,14 @@
     "url": "/items/mule_spawn_egg.png"
   },
   {
+    "name": "Mushroom Stem",
+    "texture": "mushroom_stem_inventory",
+    "url": "/items/mushroom_stem_inventory.png"
+  },
+  {
     "name": "Mushroom Stew",
     "texture": "mushroom_stew",
     "url": "/items/mushroom_stew.png"
-  },
-  {
-    "name": "Music Disc 11",
-    "texture": "music_disc_11",
-    "url": "/items/music_disc_11.png"
-  },
-  {
-    "name": "Music Disc 13",
-    "texture": "music_disc_13",
-    "url": "/items/music_disc_13.png"
-  },
-  {
-    "name": "Music Disc 5",
-    "texture": "music_disc_5",
-    "url": "/items/music_disc_5.png"
-  },
-  {
-    "name": "Music Disc Blocks",
-    "texture": "music_disc_blocks",
-    "url": "/items/music_disc_blocks.png"
-  },
-  {
-    "name": "Music Disc Cat",
-    "texture": "music_disc_cat",
-    "url": "/items/music_disc_cat.png"
-  },
-  {
-    "name": "Music Disc Chirp",
-    "texture": "music_disc_chirp",
-    "url": "/items/music_disc_chirp.png"
-  },
-  {
-    "name": "Music Disc Creator",
-    "texture": "music_disc_creator",
-    "url": "/items/music_disc_creator.png"
-  },
-  {
-    "name": "Music Disc Creator Music Box",
-    "texture": "music_disc_creator_music_box",
-    "url": "/items/music_disc_creator_music_box.png"
-  },
-  {
-    "name": "Music Disc Far",
-    "texture": "music_disc_far",
-    "url": "/items/music_disc_far.png"
-  },
-  {
-    "name": "Music Disc Lava Chicken",
-    "texture": "music_disc_lava_chicken",
-    "url": "/items/music_disc_lava_chicken.png"
-  },
-  {
-    "name": "Music Disc Mall",
-    "texture": "music_disc_mall",
-    "url": "/items/music_disc_mall.png"
-  },
-  {
-    "name": "Music Disc Mellohi",
-    "texture": "music_disc_mellohi",
-    "url": "/items/music_disc_mellohi.png"
-  },
-  {
-    "name": "Music Disc Otherside",
-    "texture": "music_disc_otherside",
-    "url": "/items/music_disc_otherside.png"
-  },
-  {
-    "name": "Music Disc Pigstep",
-    "texture": "music_disc_pigstep",
-    "url": "/items/music_disc_pigstep.png"
-  },
-  {
-    "name": "Music Disc Precipice",
-    "texture": "music_disc_precipice",
-    "url": "/items/music_disc_precipice.png"
-  },
-  {
-    "name": "Music Disc Relic",
-    "texture": "music_disc_relic",
-    "url": "/items/music_disc_relic.png"
-  },
-  {
-    "name": "Music Disc Stal",
-    "texture": "music_disc_stal",
-    "url": "/items/music_disc_stal.png"
-  },
-  {
-    "name": "Music Disc Strad",
-    "texture": "music_disc_strad",
-    "url": "/items/music_disc_strad.png"
-  },
-  {
-    "name": "Music Disc Tears",
-    "texture": "music_disc_tears",
-    "url": "/items/music_disc_tears.png"
-  },
-  {
-    "name": "Music Disc Wait",
-    "texture": "music_disc_wait",
-    "url": "/items/music_disc_wait.png"
-  },
-  {
-    "name": "Music Disc Ward",
-    "texture": "music_disc_ward",
-    "url": "/items/music_disc_ward.png"
   },
   {
     "name": "Mutton",
@@ -1930,6 +2420,21 @@
     "url": "/items/nether_brick.png"
   },
   {
+    "name": "Nether Bricks",
+    "texture": "nether_bricks",
+    "url": "/items/nether_bricks.png"
+  },
+  {
+    "name": "Nether Gold Ore",
+    "texture": "nether_gold_ore",
+    "url": "/items/nether_gold_ore.png"
+  },
+  {
+    "name": "Nether Quartz Ore",
+    "texture": "nether_quartz_ore",
+    "url": "/items/nether_quartz_ore.png"
+  },
+  {
     "name": "Nether Sprouts",
     "texture": "nether_sprouts",
     "url": "/items/nether_sprouts.png"
@@ -1945,14 +2450,14 @@
     "url": "/items/nether_wart.png"
   },
   {
-    "name": "Netherite Axe",
-    "texture": "netherite_axe",
-    "url": "/items/netherite_axe.png"
+    "name": "Nether Wart Block",
+    "texture": "nether_wart_block",
+    "url": "/items/nether_wart_block.png"
   },
   {
-    "name": "Netherite Hoe",
-    "texture": "netherite_hoe",
-    "url": "/items/netherite_hoe.png"
+    "name": "Netherite Block",
+    "texture": "netherite_block",
+    "url": "/items/netherite_block.png"
   },
   {
     "name": "Netherite Horse Armor",
@@ -1970,29 +2475,24 @@
     "url": "/items/netherite_nautilus_armor.png"
   },
   {
-    "name": "Netherite Pickaxe",
-    "texture": "netherite_pickaxe",
-    "url": "/items/netherite_pickaxe.png"
-  },
-  {
     "name": "Netherite Scrap",
     "texture": "netherite_scrap",
     "url": "/items/netherite_scrap.png"
   },
   {
-    "name": "Netherite Shovel",
-    "texture": "netherite_shovel",
-    "url": "/items/netherite_shovel.png"
-  },
-  {
-    "name": "Netherite Sword",
-    "texture": "netherite_sword",
-    "url": "/items/netherite_sword.png"
-  },
-  {
     "name": "Netherite Upgrade Smithing Template",
     "texture": "netherite_upgrade_smithing_template",
     "url": "/items/netherite_upgrade_smithing_template.png"
+  },
+  {
+    "name": "Netherrack",
+    "texture": "netherrack",
+    "url": "/items/netherrack.png"
+  },
+  {
+    "name": "Note Block",
+    "texture": "note_block",
+    "url": "/items/note_block.png"
   },
   {
     "name": "Oak Boat",
@@ -2015,6 +2515,11 @@
     "url": "/items/oak_hanging_sign.png"
   },
   {
+    "name": "Oak Planks",
+    "texture": "oak_planks",
+    "url": "/items/oak_planks.png"
+  },
+  {
     "name": "Oak Sapling",
     "texture": "oak_sapling",
     "url": "/items/oak_sapling.png"
@@ -2023,6 +2528,11 @@
     "name": "Oak Sign",
     "texture": "oak_sign",
     "url": "/items/oak_sign.png"
+  },
+  {
+    "name": "Obsidian",
+    "texture": "obsidian",
+    "url": "/items/obsidian.png"
   },
   {
     "name": "Ocelot Spawn Egg",
@@ -2050,6 +2560,16 @@
     "url": "/items/orange_candle.png"
   },
   {
+    "name": "Orange Concrete",
+    "texture": "orange_concrete",
+    "url": "/items/orange_concrete.png"
+  },
+  {
+    "name": "Orange Concrete Powder",
+    "texture": "orange_concrete_powder",
+    "url": "/items/orange_concrete_powder.png"
+  },
+  {
     "name": "Orange Dye",
     "texture": "orange_dye",
     "url": "/items/orange_dye.png"
@@ -2060,9 +2580,19 @@
     "url": "/items/orange_harness.png"
   },
   {
-    "name": "Orange Stained Glass Pane",
+    "name": "Orange Stained Glass",
     "texture": "orange_stained_glass",
     "url": "/items/orange_stained_glass.png"
+  },
+  {
+    "name": "Orange Stained Glass Pane",
+    "texture": "orange_stained_glass_pane",
+    "url": "/items/orange_stained_glass_pane.png"
+  },
+  {
+    "name": "Orange Terracotta",
+    "texture": "orange_terracotta",
+    "url": "/items/orange_terracotta.png"
   },
   {
     "name": "Orange Tulip",
@@ -2070,14 +2600,34 @@
     "url": "/items/orange_tulip.png"
   },
   {
+    "name": "Orange Wool",
+    "texture": "orange_wool",
+    "url": "/items/orange_wool.png"
+  },
+  {
     "name": "Oxeye Daisy",
     "texture": "oxeye_daisy",
     "url": "/items/oxeye_daisy.png"
   },
   {
+    "name": "Oxidized Chiseled Copper",
+    "texture": "oxidized_chiseled_copper",
+    "url": "/items/oxidized_chiseled_copper.png"
+  },
+  {
+    "name": "Oxidized Copper",
+    "texture": "oxidized_copper",
+    "url": "/items/oxidized_copper.png"
+  },
+  {
     "name": "Oxidized Copper Bars",
     "texture": "oxidized_copper_bars",
     "url": "/items/oxidized_copper_bars.png"
+  },
+  {
+    "name": "Oxidized Copper Bulb",
+    "texture": "oxidized_copper_bulb",
+    "url": "/items/oxidized_copper_bulb.png"
   },
   {
     "name": "Oxidized Copper Chain",
@@ -2090,9 +2640,29 @@
     "url": "/items/oxidized_copper_door.png"
   },
   {
+    "name": "Oxidized Copper Grate",
+    "texture": "oxidized_copper_grate",
+    "url": "/items/oxidized_copper_grate.png"
+  },
+  {
     "name": "Oxidized Copper Lantern",
     "texture": "oxidized_copper_lantern",
     "url": "/items/oxidized_copper_lantern.png"
+  },
+  {
+    "name": "Oxidized Cut Copper",
+    "texture": "oxidized_cut_copper",
+    "url": "/items/oxidized_cut_copper.png"
+  },
+  {
+    "name": "Packed Ice",
+    "texture": "packed_ice",
+    "url": "/items/packed_ice.png"
+  },
+  {
+    "name": "Packed Mud",
+    "texture": "packed_mud",
+    "url": "/items/packed_mud.png"
   },
   {
     "name": "Painting",
@@ -2103,6 +2673,11 @@
     "name": "Pale Hanging Moss",
     "texture": "pale_hanging_moss",
     "url": "/items/pale_hanging_moss.png"
+  },
+  {
+    "name": "Pale Moss Block",
+    "texture": "pale_moss_block",
+    "url": "/items/pale_moss_block.png"
   },
   {
     "name": "Pale Oak Boat",
@@ -2123,6 +2698,11 @@
     "name": "Pale Oak Hanging Sign",
     "texture": "pale_oak_hanging_sign",
     "url": "/items/pale_oak_hanging_sign.png"
+  },
+  {
+    "name": "Pale Oak Planks",
+    "texture": "pale_oak_planks",
+    "url": "/items/pale_oak_planks.png"
   },
   {
     "name": "Pale Oak Sapling",
@@ -2156,8 +2736,8 @@
   },
   {
     "name": "Peony",
-    "texture": "peony_top",
-    "url": "/items/peony_top.png"
+    "texture": "peony",
+    "url": "/items/peony.png"
   },
   {
     "name": "Phantom Membrane",
@@ -2200,6 +2780,16 @@
     "url": "/items/pink_candle.png"
   },
   {
+    "name": "Pink Concrete",
+    "texture": "pink_concrete",
+    "url": "/items/pink_concrete.png"
+  },
+  {
+    "name": "Pink Concrete Powder",
+    "texture": "pink_concrete_powder",
+    "url": "/items/pink_concrete_powder.png"
+  },
+  {
     "name": "Pink Dye",
     "texture": "pink_dye",
     "url": "/items/pink_dye.png"
@@ -2215,14 +2805,29 @@
     "url": "/items/pink_petals.png"
   },
   {
-    "name": "Pink Stained Glass Pane",
+    "name": "Pink Stained Glass",
     "texture": "pink_stained_glass",
     "url": "/items/pink_stained_glass.png"
+  },
+  {
+    "name": "Pink Stained Glass Pane",
+    "texture": "pink_stained_glass_pane",
+    "url": "/items/pink_stained_glass_pane.png"
+  },
+  {
+    "name": "Pink Terracotta",
+    "texture": "pink_terracotta",
+    "url": "/items/pink_terracotta.png"
   },
   {
     "name": "Pink Tulip",
     "texture": "pink_tulip",
     "url": "/items/pink_tulip.png"
+  },
+  {
+    "name": "Pink Wool",
+    "texture": "pink_wool",
+    "url": "/items/pink_wool.png"
   },
   {
     "name": "Pitcher Plant",
@@ -2255,6 +2860,41 @@
     "url": "/items/polar_bear_spawn_egg.png"
   },
   {
+    "name": "Polished Andesite",
+    "texture": "polished_andesite",
+    "url": "/items/polished_andesite.png"
+  },
+  {
+    "name": "Polished Blackstone",
+    "texture": "polished_blackstone",
+    "url": "/items/polished_blackstone.png"
+  },
+  {
+    "name": "Polished Blackstone Bricks",
+    "texture": "polished_blackstone_bricks",
+    "url": "/items/polished_blackstone_bricks.png"
+  },
+  {
+    "name": "Polished Deepslate",
+    "texture": "polished_deepslate",
+    "url": "/items/polished_deepslate.png"
+  },
+  {
+    "name": "Polished Diorite",
+    "texture": "polished_diorite",
+    "url": "/items/polished_diorite.png"
+  },
+  {
+    "name": "Polished Granite",
+    "texture": "polished_granite",
+    "url": "/items/polished_granite.png"
+  },
+  {
+    "name": "Polished Tuff",
+    "texture": "polished_tuff",
+    "url": "/items/polished_tuff.png"
+  },
+  {
     "name": "Popped Chorus Fruit",
     "texture": "popped_chorus_fruit",
     "url": "/items/popped_chorus_fruit.png"
@@ -2276,8 +2916,8 @@
   },
   {
     "name": "Potion",
-    "texture": "potion_overlay",
-    "url": "/items/potion_overlay.png"
+    "texture": "potion",
+    "url": "/items/potion.png"
   },
   {
     "name": "Powder Snow Bucket",
@@ -2288,6 +2928,16 @@
     "name": "Powered Rail",
     "texture": "powered_rail",
     "url": "/items/powered_rail.png"
+  },
+  {
+    "name": "Prismarine",
+    "texture": "prismarine",
+    "url": "/items/prismarine.png"
+  },
+  {
+    "name": "Prismarine Bricks",
+    "texture": "prismarine_bricks",
+    "url": "/items/prismarine_bricks.png"
   },
   {
     "name": "Prismarine Crystals",
@@ -2335,6 +2985,16 @@
     "url": "/items/purple_candle.png"
   },
   {
+    "name": "Purple Concrete",
+    "texture": "purple_concrete",
+    "url": "/items/purple_concrete.png"
+  },
+  {
+    "name": "Purple Concrete Powder",
+    "texture": "purple_concrete_powder",
+    "url": "/items/purple_concrete_powder.png"
+  },
+  {
     "name": "Purple Dye",
     "texture": "purple_dye",
     "url": "/items/purple_dye.png"
@@ -2345,14 +3005,39 @@
     "url": "/items/purple_harness.png"
   },
   {
-    "name": "Purple Stained Glass Pane",
+    "name": "Purple Stained Glass",
     "texture": "purple_stained_glass",
     "url": "/items/purple_stained_glass.png"
+  },
+  {
+    "name": "Purple Stained Glass Pane",
+    "texture": "purple_stained_glass_pane",
+    "url": "/items/purple_stained_glass_pane.png"
+  },
+  {
+    "name": "Purple Terracotta",
+    "texture": "purple_terracotta",
+    "url": "/items/purple_terracotta.png"
+  },
+  {
+    "name": "Purple Wool",
+    "texture": "purple_wool",
+    "url": "/items/purple_wool.png"
+  },
+  {
+    "name": "Purpur Block",
+    "texture": "purpur_block",
+    "url": "/items/purpur_block.png"
   },
   {
     "name": "Quartz",
     "texture": "quartz",
     "url": "/items/quartz.png"
+  },
+  {
+    "name": "Quartz Bricks",
+    "texture": "quartz_bricks",
+    "url": "/items/quartz_bricks.png"
   },
   {
     "name": "Rabbit",
@@ -2400,9 +3085,19 @@
     "url": "/items/raw_copper.png"
   },
   {
+    "name": "Raw Copper Block",
+    "texture": "raw_copper_block",
+    "url": "/items/raw_copper_block.png"
+  },
+  {
     "name": "Raw Gold",
     "texture": "raw_gold",
     "url": "/items/raw_gold.png"
+  },
+  {
+    "name": "Raw Gold Block",
+    "texture": "raw_gold_block",
+    "url": "/items/raw_gold_block.png"
   },
   {
     "name": "Raw Iron",
@@ -2410,9 +3105,24 @@
     "url": "/items/raw_iron.png"
   },
   {
+    "name": "Raw Iron Block",
+    "texture": "raw_iron_block",
+    "url": "/items/raw_iron_block.png"
+  },
+  {
     "name": "Red Candle",
     "texture": "red_candle",
     "url": "/items/red_candle.png"
+  },
+  {
+    "name": "Red Concrete",
+    "texture": "red_concrete",
+    "url": "/items/red_concrete.png"
+  },
+  {
+    "name": "Red Concrete Powder",
+    "texture": "red_concrete_powder",
+    "url": "/items/red_concrete_powder.png"
   },
   {
     "name": "Red Dye",
@@ -2430,9 +3140,34 @@
     "url": "/items/red_mushroom.png"
   },
   {
-    "name": "Red Stained Glass Pane",
+    "name": "Red Mushroom Block",
+    "texture": "red_mushroom_block_inventory",
+    "url": "/items/red_mushroom_block_inventory.png"
+  },
+  {
+    "name": "Red Nether Bricks",
+    "texture": "red_nether_bricks",
+    "url": "/items/red_nether_bricks.png"
+  },
+  {
+    "name": "Red Sand",
+    "texture": "red_sand",
+    "url": "/items/red_sand.png"
+  },
+  {
+    "name": "Red Stained Glass",
     "texture": "red_stained_glass",
     "url": "/items/red_stained_glass.png"
+  },
+  {
+    "name": "Red Stained Glass Pane",
+    "texture": "red_stained_glass_pane",
+    "url": "/items/red_stained_glass_pane.png"
+  },
+  {
+    "name": "Red Terracotta",
+    "texture": "red_terracotta",
+    "url": "/items/red_terracotta.png"
   },
   {
     "name": "Red Tulip",
@@ -2440,9 +3175,29 @@
     "url": "/items/red_tulip.png"
   },
   {
+    "name": "Red Wool",
+    "texture": "red_wool",
+    "url": "/items/red_wool.png"
+  },
+  {
     "name": "Redstone",
     "texture": "redstone",
     "url": "/items/redstone.png"
+  },
+  {
+    "name": "Redstone Block",
+    "texture": "redstone_block",
+    "url": "/items/redstone_block.png"
+  },
+  {
+    "name": "Redstone Lamp",
+    "texture": "redstone_lamp",
+    "url": "/items/redstone_lamp.png"
+  },
+  {
+    "name": "Redstone Ore",
+    "texture": "redstone_ore",
+    "url": "/items/redstone_ore.png"
   },
   {
     "name": "Redstone Torch",
@@ -2455,9 +3210,19 @@
     "url": "/items/repeater.png"
   },
   {
+    "name": "Resin Block",
+    "texture": "resin_block",
+    "url": "/items/resin_block.png"
+  },
+  {
     "name": "Resin Brick",
     "texture": "resin_brick",
     "url": "/items/resin_brick.png"
+  },
+  {
+    "name": "Resin Bricks",
+    "texture": "resin_bricks",
+    "url": "/items/resin_bricks.png"
   },
   {
     "name": "Resin Clump",
@@ -2470,9 +3235,14 @@
     "url": "/items/rib_armor_trim_smithing_template.png"
   },
   {
+    "name": "Rooted Dirt",
+    "texture": "rooted_dirt",
+    "url": "/items/rooted_dirt.png"
+  },
+  {
     "name": "Rose Bush",
-    "texture": "rose_bush_top",
-    "url": "/items/rose_bush_top.png"
+    "texture": "rose_bush",
+    "url": "/items/rose_bush.png"
   },
   {
     "name": "Rotten Flesh",
@@ -2500,14 +3270,29 @@
     "url": "/items/salmon_spawn_egg.png"
   },
   {
+    "name": "Sand",
+    "texture": "sand",
+    "url": "/items/sand.png"
+  },
+  {
     "name": "Scrape Pottery Sherd",
     "texture": "scrape_pottery_sherd",
     "url": "/items/scrape_pottery_sherd.png"
   },
   {
+    "name": "Sculk",
+    "texture": "sculk",
+    "url": "/items/sculk.png"
+  },
+  {
     "name": "Sculk Vein",
     "texture": "sculk_vein",
     "url": "/items/sculk_vein.png"
+  },
+  {
+    "name": "Sea Lantern",
+    "texture": "sea_lantern",
+    "url": "/items/sea_lantern.png"
   },
   {
     "name": "Sea Pickle",
@@ -2560,6 +3345,11 @@
     "url": "/items/short_grass.png"
   },
   {
+    "name": "Shroomlight",
+    "texture": "shroomlight",
+    "url": "/items/shroomlight.png"
+  },
+  {
     "name": "Shulker Shell",
     "texture": "shulker_shell",
     "url": "/items/shulker_shell.png"
@@ -2610,9 +3400,29 @@
     "url": "/items/slime_spawn_egg.png"
   },
   {
-    "name": "Small Amethyst Bud",
-    "texture": "small_amethyst_bud",
-    "url": "/items/small_amethyst_bud.png"
+    "name": "Smooth Basalt",
+    "texture": "smooth_basalt",
+    "url": "/items/smooth_basalt.png"
+  },
+  {
+    "name": "Smooth Quartz",
+    "texture": "smooth_quartz",
+    "url": "/items/smooth_quartz.png"
+  },
+  {
+    "name": "Smooth Red Sandstone",
+    "texture": "smooth_red_sandstone",
+    "url": "/items/smooth_red_sandstone.png"
+  },
+  {
+    "name": "Smooth Sandstone",
+    "texture": "smooth_sandstone",
+    "url": "/items/smooth_sandstone.png"
+  },
+  {
+    "name": "Smooth Stone",
+    "texture": "smooth_stone",
+    "url": "/items/smooth_stone.png"
   },
   {
     "name": "Sniffer Egg",
@@ -2635,6 +3445,11 @@
     "url": "/items/snout_armor_trim_smithing_template.png"
   },
   {
+    "name": "Snow Block",
+    "texture": "snow_block",
+    "url": "/items/snow_block.png"
+  },
+  {
     "name": "Snow Golem Spawn Egg",
     "texture": "snow_golem_spawn_egg",
     "url": "/items/snow_golem_spawn_egg.png"
@@ -2653,6 +3468,16 @@
     "name": "Soul Lantern",
     "texture": "soul_lantern",
     "url": "/items/soul_lantern.png"
+  },
+  {
+    "name": "Soul Sand",
+    "texture": "soul_sand",
+    "url": "/items/soul_sand.png"
+  },
+  {
+    "name": "Soul Soil",
+    "texture": "soul_soil",
+    "url": "/items/soul_soil.png"
   },
   {
     "name": "Soul Torch",
@@ -2681,8 +3506,13 @@
   },
   {
     "name": "Splash Potion",
-    "texture": "potion_overlay",
-    "url": "/items/potion_overlay.png"
+    "texture": "splash_potion",
+    "url": "/items/splash_potion.png"
+  },
+  {
+    "name": "Sponge",
+    "texture": "sponge",
+    "url": "/items/sponge.png"
   },
   {
     "name": "Spruce Boat",
@@ -2705,6 +3535,11 @@
     "url": "/items/spruce_hanging_sign.png"
   },
   {
+    "name": "Spruce Planks",
+    "texture": "spruce_planks",
+    "url": "/items/spruce_planks.png"
+  },
+  {
     "name": "Spruce Sapling",
     "texture": "spruce_sapling",
     "url": "/items/spruce_sapling.png"
@@ -2720,34 +3555,14 @@
     "url": "/items/squid_spawn_egg.png"
   },
   {
-    "name": "Stick",
-    "texture": "stick",
-    "url": "/items/stick.png"
+    "name": "Stone",
+    "texture": "stone",
+    "url": "/items/stone.png"
   },
   {
-    "name": "Stone Axe",
-    "texture": "stone_axe",
-    "url": "/items/stone_axe.png"
-  },
-  {
-    "name": "Stone Hoe",
-    "texture": "stone_hoe",
-    "url": "/items/stone_hoe.png"
-  },
-  {
-    "name": "Stone Pickaxe",
-    "texture": "stone_pickaxe",
-    "url": "/items/stone_pickaxe.png"
-  },
-  {
-    "name": "Stone Shovel",
-    "texture": "stone_shovel",
-    "url": "/items/stone_shovel.png"
-  },
-  {
-    "name": "Stone Sword",
-    "texture": "stone_sword",
-    "url": "/items/stone_sword.png"
+    "name": "Stone Bricks",
+    "texture": "stone_bricks",
+    "url": "/items/stone_bricks.png"
   },
   {
     "name": "Stray Spawn Egg",
@@ -2763,6 +3578,11 @@
     "name": "String",
     "texture": "string",
     "url": "/items/string.png"
+  },
+  {
+    "name": "Structure Block",
+    "texture": "structure_block",
+    "url": "/items/structure_block.png"
   },
   {
     "name": "Structure Void",
@@ -2781,8 +3601,18 @@
   },
   {
     "name": "Sunflower",
-    "texture": "sunflower_front",
-    "url": "/items/sunflower_front.png"
+    "texture": "sunflower",
+    "url": "/items/sunflower.png"
+  },
+  {
+    "name": "Suspicious Gravel",
+    "texture": "suspicious_gravel_0",
+    "url": "/items/suspicious_gravel_0.png"
+  },
+  {
+    "name": "Suspicious Sand",
+    "texture": "suspicious_sand_0",
+    "url": "/items/suspicious_sand_0.png"
   },
   {
     "name": "Suspicious Stew",
@@ -2811,8 +3641,18 @@
   },
   {
     "name": "Tall Grass",
-    "texture": "tall_grass_top",
-    "url": "/items/tall_grass_top.png"
+    "texture": "tall_grass",
+    "url": "/items/tall_grass.png"
+  },
+  {
+    "name": "Terracotta",
+    "texture": "terracotta",
+    "url": "/items/terracotta.png"
+  },
+  {
+    "name": "Test Instance Block",
+    "texture": "test_instance_block",
+    "url": "/items/test_instance_block.png"
   },
   {
     "name": "Tide Armor Trim Smithing Template",
@@ -2820,9 +3660,14 @@
     "url": "/items/tide_armor_trim_smithing_template.png"
   },
   {
+    "name": "Tinted Glass",
+    "texture": "tinted_glass",
+    "url": "/items/tinted_glass.png"
+  },
+  {
     "name": "Tipped Arrow",
-    "texture": "tipped_arrow_head",
-    "url": "/items/tipped_arrow_head.png"
+    "texture": "tipped_arrow",
+    "url": "/items/tipped_arrow.png"
   },
   {
     "name": "Tnt Minecart",
@@ -2885,9 +3730,24 @@
     "url": "/items/tube_coral.png"
   },
   {
+    "name": "Tube Coral Block",
+    "texture": "tube_coral_block",
+    "url": "/items/tube_coral_block.png"
+  },
+  {
     "name": "Tube Coral Fan",
     "texture": "tube_coral_fan",
     "url": "/items/tube_coral_fan.png"
+  },
+  {
+    "name": "Tuff",
+    "texture": "tuff",
+    "url": "/items/tuff.png"
+  },
+  {
+    "name": "Tuff Bricks",
+    "texture": "tuff_bricks",
+    "url": "/items/tuff_bricks.png"
   },
   {
     "name": "Turtle Egg",
@@ -2906,8 +3766,8 @@
   },
   {
     "name": "Twisting Vines",
-    "texture": "twisting_vines_plant",
-    "url": "/items/twisting_vines_plant.png"
+    "texture": "twisting_vines",
+    "url": "/items/twisting_vines.png"
   },
   {
     "name": "Vex Armor Trim Smithing Template",
@@ -2960,14 +3820,14 @@
     "url": "/items/warped_fungus.png"
   },
   {
-    "name": "Warped Fungus On A Stick",
-    "texture": "warped_fungus_on_a_stick",
-    "url": "/items/warped_fungus_on_a_stick.png"
-  },
-  {
     "name": "Warped Hanging Sign",
     "texture": "warped_hanging_sign",
     "url": "/items/warped_hanging_sign.png"
+  },
+  {
+    "name": "Warped Planks",
+    "texture": "warped_planks",
+    "url": "/items/warped_planks.png"
   },
   {
     "name": "Warped Roots",
@@ -2980,14 +3840,34 @@
     "url": "/items/warped_sign.png"
   },
   {
+    "name": "Warped Wart Block",
+    "texture": "warped_wart_block",
+    "url": "/items/warped_wart_block.png"
+  },
+  {
     "name": "Water Bucket",
     "texture": "water_bucket",
     "url": "/items/water_bucket.png"
   },
   {
+    "name": "Waxed Chiseled Copper",
+    "texture": "chiseled_copper",
+    "url": "/items/chiseled_copper.png"
+  },
+  {
     "name": "Waxed Copper Bars",
     "texture": "copper_bars",
     "url": "/items/copper_bars.png"
+  },
+  {
+    "name": "Waxed Copper Block",
+    "texture": "copper_block",
+    "url": "/items/copper_block.png"
+  },
+  {
+    "name": "Waxed Copper Bulb",
+    "texture": "copper_bulb",
+    "url": "/items/copper_bulb.png"
   },
   {
     "name": "Waxed Copper Chain",
@@ -3000,14 +3880,39 @@
     "url": "/items/copper_door.png"
   },
   {
+    "name": "Waxed Copper Grate",
+    "texture": "copper_grate",
+    "url": "/items/copper_grate.png"
+  },
+  {
     "name": "Waxed Copper Lantern",
     "texture": "copper_lantern",
     "url": "/items/copper_lantern.png"
   },
   {
+    "name": "Waxed Cut Copper",
+    "texture": "cut_copper",
+    "url": "/items/cut_copper.png"
+  },
+  {
+    "name": "Waxed Exposed Chiseled Copper",
+    "texture": "exposed_chiseled_copper",
+    "url": "/items/exposed_chiseled_copper.png"
+  },
+  {
+    "name": "Waxed Exposed Copper",
+    "texture": "exposed_copper",
+    "url": "/items/exposed_copper.png"
+  },
+  {
     "name": "Waxed Exposed Copper Bars",
     "texture": "exposed_copper_bars",
     "url": "/items/exposed_copper_bars.png"
+  },
+  {
+    "name": "Waxed Exposed Copper Bulb",
+    "texture": "exposed_copper_bulb",
+    "url": "/items/exposed_copper_bulb.png"
   },
   {
     "name": "Waxed Exposed Copper Chain",
@@ -3020,14 +3925,39 @@
     "url": "/items/exposed_copper_door.png"
   },
   {
+    "name": "Waxed Exposed Copper Grate",
+    "texture": "exposed_copper_grate",
+    "url": "/items/exposed_copper_grate.png"
+  },
+  {
     "name": "Waxed Exposed Copper Lantern",
     "texture": "exposed_copper_lantern",
     "url": "/items/exposed_copper_lantern.png"
   },
   {
+    "name": "Waxed Exposed Cut Copper",
+    "texture": "exposed_cut_copper",
+    "url": "/items/exposed_cut_copper.png"
+  },
+  {
+    "name": "Waxed Oxidized Chiseled Copper",
+    "texture": "oxidized_chiseled_copper",
+    "url": "/items/oxidized_chiseled_copper.png"
+  },
+  {
+    "name": "Waxed Oxidized Copper",
+    "texture": "oxidized_copper",
+    "url": "/items/oxidized_copper.png"
+  },
+  {
     "name": "Waxed Oxidized Copper Bars",
     "texture": "oxidized_copper_bars",
     "url": "/items/oxidized_copper_bars.png"
+  },
+  {
+    "name": "Waxed Oxidized Copper Bulb",
+    "texture": "oxidized_copper_bulb",
+    "url": "/items/oxidized_copper_bulb.png"
   },
   {
     "name": "Waxed Oxidized Copper Chain",
@@ -3040,14 +3970,39 @@
     "url": "/items/oxidized_copper_door.png"
   },
   {
+    "name": "Waxed Oxidized Copper Grate",
+    "texture": "oxidized_copper_grate",
+    "url": "/items/oxidized_copper_grate.png"
+  },
+  {
     "name": "Waxed Oxidized Copper Lantern",
     "texture": "oxidized_copper_lantern",
     "url": "/items/oxidized_copper_lantern.png"
   },
   {
+    "name": "Waxed Oxidized Cut Copper",
+    "texture": "oxidized_cut_copper",
+    "url": "/items/oxidized_cut_copper.png"
+  },
+  {
+    "name": "Waxed Weathered Chiseled Copper",
+    "texture": "weathered_chiseled_copper",
+    "url": "/items/weathered_chiseled_copper.png"
+  },
+  {
+    "name": "Waxed Weathered Copper",
+    "texture": "weathered_copper",
+    "url": "/items/weathered_copper.png"
+  },
+  {
     "name": "Waxed Weathered Copper Bars",
     "texture": "weathered_copper_bars",
     "url": "/items/weathered_copper_bars.png"
+  },
+  {
+    "name": "Waxed Weathered Copper Bulb",
+    "texture": "weathered_copper_bulb",
+    "url": "/items/weathered_copper_bulb.png"
   },
   {
     "name": "Waxed Weathered Copper Chain",
@@ -3060,9 +4015,19 @@
     "url": "/items/weathered_copper_door.png"
   },
   {
+    "name": "Waxed Weathered Copper Grate",
+    "texture": "weathered_copper_grate",
+    "url": "/items/weathered_copper_grate.png"
+  },
+  {
     "name": "Waxed Weathered Copper Lantern",
     "texture": "weathered_copper_lantern",
     "url": "/items/weathered_copper_lantern.png"
+  },
+  {
+    "name": "Waxed Weathered Cut Copper",
+    "texture": "weathered_cut_copper",
+    "url": "/items/weathered_cut_copper.png"
   },
   {
     "name": "Wayfinder Armor Trim Smithing Template",
@@ -3070,9 +4035,24 @@
     "url": "/items/wayfinder_armor_trim_smithing_template.png"
   },
   {
+    "name": "Weathered Chiseled Copper",
+    "texture": "weathered_chiseled_copper",
+    "url": "/items/weathered_chiseled_copper.png"
+  },
+  {
+    "name": "Weathered Copper",
+    "texture": "weathered_copper",
+    "url": "/items/weathered_copper.png"
+  },
+  {
     "name": "Weathered Copper Bars",
     "texture": "weathered_copper_bars",
     "url": "/items/weathered_copper_bars.png"
+  },
+  {
+    "name": "Weathered Copper Bulb",
+    "texture": "weathered_copper_bulb",
+    "url": "/items/weathered_copper_bulb.png"
   },
   {
     "name": "Weathered Copper Chain",
@@ -3085,14 +4065,29 @@
     "url": "/items/weathered_copper_door.png"
   },
   {
+    "name": "Weathered Copper Grate",
+    "texture": "weathered_copper_grate",
+    "url": "/items/weathered_copper_grate.png"
+  },
+  {
     "name": "Weathered Copper Lantern",
     "texture": "weathered_copper_lantern",
     "url": "/items/weathered_copper_lantern.png"
   },
   {
+    "name": "Weathered Cut Copper",
+    "texture": "weathered_cut_copper",
+    "url": "/items/weathered_cut_copper.png"
+  },
+  {
     "name": "Weeping Vines",
-    "texture": "weeping_vines_plant",
-    "url": "/items/weeping_vines_plant.png"
+    "texture": "weeping_vines",
+    "url": "/items/weeping_vines.png"
+  },
+  {
+    "name": "Wet Sponge",
+    "texture": "wet_sponge",
+    "url": "/items/wet_sponge.png"
   },
   {
     "name": "Wheat",
@@ -3110,6 +4105,16 @@
     "url": "/items/white_candle.png"
   },
   {
+    "name": "White Concrete",
+    "texture": "white_concrete",
+    "url": "/items/white_concrete.png"
+  },
+  {
+    "name": "White Concrete Powder",
+    "texture": "white_concrete_powder",
+    "url": "/items/white_concrete_powder.png"
+  },
+  {
     "name": "White Dye",
     "texture": "white_dye",
     "url": "/items/white_dye.png"
@@ -3120,14 +4125,29 @@
     "url": "/items/white_harness.png"
   },
   {
-    "name": "White Stained Glass Pane",
+    "name": "White Stained Glass",
     "texture": "white_stained_glass",
     "url": "/items/white_stained_glass.png"
+  },
+  {
+    "name": "White Stained Glass Pane",
+    "texture": "white_stained_glass_pane",
+    "url": "/items/white_stained_glass_pane.png"
+  },
+  {
+    "name": "White Terracotta",
+    "texture": "white_terracotta",
+    "url": "/items/white_terracotta.png"
   },
   {
     "name": "White Tulip",
     "texture": "white_tulip",
     "url": "/items/white_tulip.png"
+  },
+  {
+    "name": "White Wool",
+    "texture": "white_wool",
+    "url": "/items/white_wool.png"
   },
   {
     "name": "Wild Armor Trim Smithing Template",
@@ -3170,31 +4190,6 @@
     "url": "/items/wolf_spawn_egg.png"
   },
   {
-    "name": "Wooden Axe",
-    "texture": "wooden_axe",
-    "url": "/items/wooden_axe.png"
-  },
-  {
-    "name": "Wooden Hoe",
-    "texture": "wooden_hoe",
-    "url": "/items/wooden_hoe.png"
-  },
-  {
-    "name": "Wooden Pickaxe",
-    "texture": "wooden_pickaxe",
-    "url": "/items/wooden_pickaxe.png"
-  },
-  {
-    "name": "Wooden Shovel",
-    "texture": "wooden_shovel",
-    "url": "/items/wooden_shovel.png"
-  },
-  {
-    "name": "Wooden Sword",
-    "texture": "wooden_sword",
-    "url": "/items/wooden_sword.png"
-  },
-  {
     "name": "Writable Book",
     "texture": "writable_book",
     "url": "/items/writable_book.png"
@@ -3210,6 +4205,16 @@
     "url": "/items/yellow_candle.png"
   },
   {
+    "name": "Yellow Concrete",
+    "texture": "yellow_concrete",
+    "url": "/items/yellow_concrete.png"
+  },
+  {
+    "name": "Yellow Concrete Powder",
+    "texture": "yellow_concrete_powder",
+    "url": "/items/yellow_concrete_powder.png"
+  },
+  {
     "name": "Yellow Dye",
     "texture": "yellow_dye",
     "url": "/items/yellow_dye.png"
@@ -3220,9 +4225,24 @@
     "url": "/items/yellow_harness.png"
   },
   {
-    "name": "Yellow Stained Glass Pane",
+    "name": "Yellow Stained Glass",
     "texture": "yellow_stained_glass",
     "url": "/items/yellow_stained_glass.png"
+  },
+  {
+    "name": "Yellow Stained Glass Pane",
+    "texture": "yellow_stained_glass_pane",
+    "url": "/items/yellow_stained_glass_pane.png"
+  },
+  {
+    "name": "Yellow Terracotta",
+    "texture": "yellow_terracotta",
+    "url": "/items/yellow_terracotta.png"
+  },
+  {
+    "name": "Yellow Wool",
+    "texture": "yellow_wool",
+    "url": "/items/yellow_wool.png"
   },
   {
     "name": "Zoglin Spawn Egg",
