@@ -52,13 +52,25 @@ type ItemDefinition = {
 
 type ModelJson =
     | {
-          parent: "minecraft:item/generated" | "minecraft:item/handheld";
+          parent:
+              | "minecraft:item/generated"
+              | "minecraft:item/handheld"
+              | "minecraft:item/handheld_rod"
+              | "minecraft:item/handheld_mace"
+              | "minecraft:item/amethyst_bud"
+              | "minecraft:item/template_music_disc"
+              | "item/generated"
+              | "item/handheld"
+              | "item/handheld_rod"
+              | "item/handheld_mace"
+              | "item/amethyst_bud"
+              | "item/template_music_disc";
           textures: {
               layer0: string;
           };
       }
     | {
-          parent: "minecraft:block/cube_all";
+          parent: "minecraft:block/cube_all" | "block/cube_all";
           textures: {
               all: string;
           };
@@ -205,7 +217,8 @@ async function renderModel(
         const modelJson = readFileSync(modelFilePath, "utf8");
         const model: ModelJson = JSON.parse(modelJson);
         switch (model.parent) {
-            case "minecraft:block/cube_all": {
+            case "minecraft:block/cube_all":
+            case "block/cube_all": {
                 const texturePath = model.textures.all;
                 const success = await renderCubeAll(
                     repoRoot,
@@ -216,7 +229,17 @@ async function renderModel(
             }
 
             case "minecraft:item/generated":
-            case "minecraft:item/handheld": {
+            case "minecraft:item/handheld":
+            case "minecraft:item/handheld_rod":
+            case "minecraft:item/handheld_mace":
+            case "minecraft:item/amethyst_bud":
+            case "minecraft:item/template_music_disc":
+            case "item/generated":
+            case "item/handheld":
+            case "item/handheld_rod":
+            case "item/handheld_mace":
+            case "item/amethyst_bud":
+            case "item/template_music_disc": {
                 const texturePath = model.textures.layer0;
                 const resolvedTexturePath = resolveTexturePath(texturePath);
                 const textureSourcePath = join(repoRoot, resolvedTexturePath);

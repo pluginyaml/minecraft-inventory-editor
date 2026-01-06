@@ -295,6 +295,11 @@
     "url": "/items/bolt_armor_trim_smithing_template.png"
   },
   {
+    "name": "Bone",
+    "texture": "bone",
+    "url": "/items/bone.png"
+  },
+  {
     "name": "Bone Meal",
     "texture": "bone_meal",
     "url": "/items/bone_meal.png"
@@ -445,6 +450,11 @@
     "url": "/items/carrot.png"
   },
   {
+    "name": "Carrot On A Stick",
+    "texture": "carrot_on_a_stick",
+    "url": "/items/carrot_on_a_stick.png"
+  },
+  {
     "name": "Cat Spawn Egg",
     "texture": "cat_spawn_egg",
     "url": "/items/cat_spawn_egg.png"
@@ -563,6 +573,11 @@
     "name": "Cocoa Beans",
     "texture": "cocoa_beans",
     "url": "/items/cocoa_beans.png"
+  },
+  {
+    "name": "Cod",
+    "texture": "cod",
+    "url": "/items/cod.png"
   },
   {
     "name": "Cod Bucket",
@@ -1100,6 +1115,11 @@
     "url": "/items/eye_armor_trim_smithing_template.png"
   },
   {
+    "name": "Feather",
+    "texture": "feather",
+    "url": "/items/feather.png"
+  },
+  {
     "name": "Fermented Spider Eye",
     "texture": "fermented_spider_eye",
     "url": "/items/fermented_spider_eye.png"
@@ -1415,6 +1435,11 @@
     "url": "/items/guster_pottery_sherd.png"
   },
   {
+    "name": "Hanging Roots",
+    "texture": "hanging_roots",
+    "url": "/items/hanging_roots.png"
+  },
+  {
     "name": "Happy Ghast Spawn Egg",
     "texture": "happy_ghast_spawn_egg",
     "url": "/items/happy_ghast_spawn_egg.png"
@@ -1645,6 +1670,11 @@
     "url": "/items/lapis_lazuli.png"
   },
   {
+    "name": "Large Amethyst Bud",
+    "texture": "large_amethyst_bud",
+    "url": "/items/large_amethyst_bud.png"
+  },
+  {
     "name": "Large Fern",
     "texture": "large_fern",
     "url": "/items/large_fern.png"
@@ -1653,6 +1683,11 @@
     "name": "Lava Bucket",
     "texture": "lava_bucket",
     "url": "/items/lava_bucket.png"
+  },
+  {
+    "name": "Lead",
+    "texture": "lead",
+    "url": "/items/lead.png"
   },
   {
     "name": "Leaf Litter",
@@ -1785,6 +1820,11 @@
     "url": "/items/llama_spawn_egg.png"
   },
   {
+    "name": "Mace",
+    "texture": "mace",
+    "url": "/items/mace.png"
+  },
+  {
     "name": "Magenta Candle",
     "texture": "magenta_candle",
     "url": "/items/magenta_candle.png"
@@ -1850,6 +1890,11 @@
     "url": "/items/map.png"
   },
   {
+    "name": "Medium Amethyst Bud",
+    "texture": "medium_amethyst_bud",
+    "url": "/items/medium_amethyst_bud.png"
+  },
+  {
     "name": "Melon Seeds",
     "texture": "melon_seeds",
     "url": "/items/melon_seeds.png"
@@ -1898,6 +1943,111 @@
     "name": "Mushroom Stew",
     "texture": "mushroom_stew",
     "url": "/items/mushroom_stew.png"
+  },
+  {
+    "name": "Music Disc 11",
+    "texture": "music_disc_11",
+    "url": "/items/music_disc_11.png"
+  },
+  {
+    "name": "Music Disc 13",
+    "texture": "music_disc_13",
+    "url": "/items/music_disc_13.png"
+  },
+  {
+    "name": "Music Disc 5",
+    "texture": "music_disc_5",
+    "url": "/items/music_disc_5.png"
+  },
+  {
+    "name": "Music Disc Blocks",
+    "texture": "music_disc_blocks",
+    "url": "/items/music_disc_blocks.png"
+  },
+  {
+    "name": "Music Disc Cat",
+    "texture": "music_disc_cat",
+    "url": "/items/music_disc_cat.png"
+  },
+  {
+    "name": "Music Disc Chirp",
+    "texture": "music_disc_chirp",
+    "url": "/items/music_disc_chirp.png"
+  },
+  {
+    "name": "Music Disc Creator",
+    "texture": "music_disc_creator",
+    "url": "/items/music_disc_creator.png"
+  },
+  {
+    "name": "Music Disc Creator Music Box",
+    "texture": "music_disc_creator_music_box",
+    "url": "/items/music_disc_creator_music_box.png"
+  },
+  {
+    "name": "Music Disc Far",
+    "texture": "music_disc_far",
+    "url": "/items/music_disc_far.png"
+  },
+  {
+    "name": "Music Disc Lava Chicken",
+    "texture": "music_disc_lava_chicken",
+    "url": "/items/music_disc_lava_chicken.png"
+  },
+  {
+    "name": "Music Disc Mall",
+    "texture": "music_disc_mall",
+    "url": "/items/music_disc_mall.png"
+  },
+  {
+    "name": "Music Disc Mellohi",
+    "texture": "music_disc_mellohi",
+    "url": "/items/music_disc_mellohi.png"
+  },
+  {
+    "name": "Music Disc Otherside",
+    "texture": "music_disc_otherside",
+    "url": "/items/music_disc_otherside.png"
+  },
+  {
+    "name": "Music Disc Pigstep",
+    "texture": "music_disc_pigstep",
+    "url": "/items/music_disc_pigstep.png"
+  },
+  {
+    "name": "Music Disc Precipice",
+    "texture": "music_disc_precipice",
+    "url": "/items/music_disc_precipice.png"
+  },
+  {
+    "name": "Music Disc Relic",
+    "texture": "music_disc_relic",
+    "url": "/items/music_disc_relic.png"
+  },
+  {
+    "name": "Music Disc Stal",
+    "texture": "music_disc_stal",
+    "url": "/items/music_disc_stal.png"
+  },
+  {
+    "name": "Music Disc Strad",
+    "texture": "music_disc_strad",
+    "url": "/items/music_disc_strad.png"
+  },
+  {
+    "name": "Music Disc Tears",
+    "texture": "music_disc_tears",
+    "url": "/items/music_disc_tears.png"
+  },
+  {
+    "name": "Music Disc Wait",
+    "texture": "music_disc_wait",
+    "url": "/items/music_disc_wait.png"
+  },
+  {
+    "name": "Music Disc Ward",
+    "texture": "music_disc_ward",
+    "url": "/items/music_disc_ward.png"
   },
   {
     "name": "Mutton",
@@ -2630,6 +2780,11 @@
     "url": "/items/slime_spawn_egg.png"
   },
   {
+    "name": "Small Amethyst Bud",
+    "texture": "small_amethyst_bud",
+    "url": "/items/small_amethyst_bud.png"
+  },
+  {
     "name": "Sniffer Egg",
     "texture": "sniffer_egg",
     "url": "/items/sniffer_egg.png"
@@ -2993,6 +3148,11 @@
     "name": "Warped Fungus",
     "texture": "warped_fungus",
     "url": "/items/warped_fungus.png"
+  },
+  {
+    "name": "Warped Fungus On A Stick",
+    "texture": "warped_fungus_on_a_stick",
+    "url": "/items/warped_fungus_on_a_stick.png"
   },
   {
     "name": "Warped Hanging Sign",
