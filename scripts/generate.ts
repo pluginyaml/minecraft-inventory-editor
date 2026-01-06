@@ -25,45 +25,47 @@ interface ItemInfo {
     url: string;
 }
 
-interface ItemModel {
-    type: string;
-    model: string;
-}
-
-interface ItemDefinition {
-    model: ItemModel | { type: string; [key: string]: unknown };
-}
-
-interface AllItemsJson {
-    [itemName: string]: ItemDefinition;
-}
+type ItemDefinition = {
+    model:
+        | {
+              type: "minecraft:model";
+              model: string;
+          }
+        | {
+              type: "minecraft:select";
+              cases: {
+                  model:
+                      | {
+                            type: "minecraft:model";
+                            model: string;
+                        }
+                      | {
+                            type: "minecraft:special";
+                            model: {
+                                type: "minecraft:copper_golem_statue";
+                                texture: string;
+                            };
+                        };
+              }[];
+          };
+};
 
 type ModelJson =
     | {
           parent: "minecraft:item/generated";
-          textures?: {
-              layer0?: string;
-              [key: string]: string | undefined;
+          textures: {
+              layer0: string;
           };
-          [key: string]: unknown;
       }
     | {
           parent: "minecraft:block/cube_all";
-          textures?: {
-              all?: string;
-              layer0?: string;
-              [key: string]: string | undefined;
+          textures: {
+              all: string;
           };
-          [key: string]: unknown;
       }
     | {
-          parent?: string;
-          textures?: {
-              layer0?: string;
-              all?: string;
-              [key: string]: string | undefined;
-          };
-          [key: string]: unknown;
+          // fallback for unknown models
+          parent?: never;
       };
 
 function parseVersion(versionString: string): number[] {
@@ -174,10 +176,13 @@ function compileJavaRenderer(): void {
 
     try {
         console.log("Compiling Java renderer...");
-        execSync(`javac "${javaFile}"`, {
-            cwd: javaDir,
-            stdio: "inherit",
-        });
+        execSync(
+            `C:\\Users\\gbv_s\\.jdks\\corretto-21.0.9\\bin\\javac "${javaFile}"`,
+            {
+                cwd: javaDir,
+                stdio: "inherit",
+            },
+        );
         console.log("Java renderer compiled successfully");
     } catch (error) {
         console.warn("Failed to compile Java renderer:", error);
@@ -199,13 +204,9 @@ async function renderModel(
     try {
         const modelJson = readFileSync(modelFilePath, "utf8");
         const model: ModelJson = JSON.parse(modelJson);
-        const parent = model.parent ?? "";
-
-        switch (parent) {
+        switch (model.parent) {
             case "minecraft:block/cube_all": {
-                const texturePath =
-                    model.textures?.all || model.textures?.layer0;
-                if (!texturePath) return "failed";
+                const texturePath = model.textures.all;
                 const success = await renderCubeAll(
                     repoRoot,
                     texturePath,
@@ -215,8 +216,7 @@ async function renderModel(
             }
 
             case "minecraft:item/generated": {
-                const texturePath = model.textures?.layer0;
-                if (!texturePath) return "failed";
+                const texturePath = model.textures.layer0;
                 const resolvedTexturePath = resolveTexturePath(texturePath);
                 const textureSourcePath = join(repoRoot, resolvedTexturePath);
                 if (!existsSync(textureSourcePath)) return "failed";
@@ -225,6 +225,9 @@ async function renderModel(
             }
 
             default: {
+                console.error(
+                    `Unsupported model: ${modelPath} (${model.parent})`,
+                );
                 return "failed";
             }
         }
@@ -264,7 +267,7 @@ async function renderCubeAll(
 
         // 引数形式: <output> <render_type> <...textures>
         execSync(
-            `java -cp "${javaDir}" BlockRenderer "${outputPath}" "cube_all" "${textureSourcePath}"`,
+            `C:\\Users\\gbv_s\\.jdks\\corretto-21.0.9\\bin\\java -cp "${javaDir}" BlockRenderer "${outputPath}" "cube_all" "${textureSourcePath}"`,
             {
                 stdio: "pipe", // エラー出力を抑制（必要に応じて変更）
             },
@@ -329,7 +332,8 @@ async function generate(): Promise<void> {
         }
 
         const allJsonContent = readFileSync(allJsonPath, "utf8");
-        const allItems: AllItemsJson = JSON.parse(allJsonContent);
+        const allItems: Record<string, ItemDefinition> =
+            JSON.parse(allJsonContent);
         const itemNames = Object.keys(allItems);
         console.log(`Found ${itemNames.length} item definitions`);
 
@@ -347,18 +351,27 @@ async function generate(): Promise<void> {
         let failed = 0;
 
         await Promise.all(
-            itemNames.map(async (itemName, index) => {
+            itemNames.map(async (itemName) => {
                 const itemDef = allItems[itemName];
 
                 let modelPath: string | null = null;
-                if (
-                    itemDef.model &&
-                    typeof itemDef.model === "object" &&
-                    "model" in itemDef.model
-                ) {
-                    const model = itemDef.model as ItemModel;
-                    if (model.type === "minecraft:model") {
-                        modelPath = model.model;
+                switch (itemDef.model.type) {
+                    case "minecraft:model": {
+                        modelPath = itemDef.model.model;
+                        break;
+                    }
+                    case "minecraft:select": {
+                        switch (itemDef.model.cases[0].model.type) {
+                            case "minecraft:model": {
+                                modelPath = itemDef.model.cases[0].model.model;
+                                break;
+                            }
+                            case "minecraft:special": {
+                                modelPath = null; // Unsupported
+                                break;
+                            }
+                        }
+                        break;
                     }
                 }
 
@@ -396,10 +409,6 @@ async function generate(): Promise<void> {
                         url: `/${type}/${fileName}`,
                     });
                 }
-
-                console.log(
-                    `\r[${index + 1}/${itemNames.length}] Copied: ${copied}, Rendered: ${rendered}, Failed: ${failed}`,
-                );
             }),
         );
 
@@ -414,7 +423,7 @@ async function generate(): Promise<void> {
         console.log(`  Total items: ${items.length}`);
         console.log(`  Output directory: ${outputDir}`);
     } catch (error) {
-        console.error(`Error downloading items for version ${version}:`, error);
+        console.error(`Error generating items for version ${version}:`, error);
         process.exit(1);
     }
 }
