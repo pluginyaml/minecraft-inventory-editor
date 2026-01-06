@@ -176,11 +176,7 @@ function resolveModelPath(modelPath: string): string {
 
 function resolveTexturePath(texturePath: string): string {
     // Convert "minecraft:item/apple" to "assets/minecraft/textures/item/apple.png"
-    const parts = texturePath.replace("minecraft:", "").split("/");
-    if (parts.length === 2) {
-        return `assets/minecraft/textures/${parts[0]}/${parts[1]}.png`;
-    }
-    return texturePath;
+    return `assets/minecraft/textures/${texturePath.replace("minecraft:", "")}.png`;
 }
 
 async function compileJavaRenderer(): Promise<void> {
