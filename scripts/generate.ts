@@ -9,6 +9,7 @@ import {
     writeFileSync,
 } from "node:fs";
 import { join } from "node:path";
+import sharp from "sharp";
 
 interface GitHubBranch {
     name: string;
@@ -67,6 +68,8 @@ type ModelJson =
               | "item/template_music_disc";
           textures: {
               layer0: string;
+              layer1?: string;
+              layer2?: string;
           };
       }
     | {
@@ -240,12 +243,26 @@ async function renderModel(
             case "item/handheld_mace":
             case "item/amethyst_bud":
             case "item/template_music_disc": {
-                const texturePath = model.textures.layer0;
-                const resolvedTexturePath = resolveTexturePath(texturePath);
-                const textureSourcePath = join(repoRoot, resolvedTexturePath);
-                if (!existsSync(textureSourcePath)) return "failed";
-                cpSync(textureSourcePath, outputPath);
-                return "copied";
+                if (Object.keys(model.textures).length === 1) {
+                    const texturePath = model.textures.layer0;
+                    const resolvedTexturePath = resolveTexturePath(texturePath);
+                    const textureSourcePath = join(
+                        repoRoot,
+                        resolvedTexturePath,
+                    );
+                    if (!existsSync(textureSourcePath)) return "failed";
+                    cpSync(textureSourcePath, outputPath);
+                    return "copied";
+                }
+
+                // Composite multiple layers
+                const layers = Object.values(model.textures);
+                const success = await compositeLayers(
+                    repoRoot,
+                    layers,
+                    outputPath,
+                );
+                return success ? "rendered" : "failed";
             }
 
             default: {
@@ -258,6 +275,47 @@ async function renderModel(
     } catch (error) {
         console.error(`Error parsing model ${modelPath}:`, error);
         return "failed";
+    }
+}
+
+async function compositeLayers(
+    repoRoot: string,
+    texturePaths: string[],
+    outputPath: string,
+): Promise<boolean> {
+    try {
+        const resolvedPaths = texturePaths.map((path) =>
+            join(repoRoot, resolveTexturePath(path)),
+        );
+
+        // Check if all textures exist
+        for (const path of resolvedPaths) {
+            if (!existsSync(path)) {
+                console.error(`Texture not found: ${path}`);
+                return false;
+            }
+        }
+
+        // Load the first layer as base
+        let composite = sharp(resolvedPaths[0]);
+
+        // Composite additional layers on top
+        if (resolvedPaths.length > 1) {
+            const overlays = await Promise.all(
+                resolvedPaths.slice(1).map(async (path) => {
+                    return { input: await sharp(path).toBuffer() };
+                }),
+            );
+
+            composite = composite.composite(overlays);
+        }
+
+        // Save the result
+        await composite.png().toFile(outputPath);
+        return existsSync(outputPath);
+    } catch (error) {
+        console.error(`Error compositing layers:`, error);
+        return false;
     }
 }
 

@@ -470,26 +470,6 @@
     "url": "/items/cave_spider_spawn_egg.png"
   },
   {
-    "name": "Chainmail Boots",
-    "texture": "chainmail_boots_quartz_trim",
-    "url": "/items/chainmail_boots_quartz_trim.png"
-  },
-  {
-    "name": "Chainmail Chestplate",
-    "texture": "chainmail_chestplate_quartz_trim",
-    "url": "/items/chainmail_chestplate_quartz_trim.png"
-  },
-  {
-    "name": "Chainmail Helmet",
-    "texture": "chainmail_helmet_quartz_trim",
-    "url": "/items/chainmail_helmet_quartz_trim.png"
-  },
-  {
-    "name": "Chainmail Leggings",
-    "texture": "chainmail_leggings_quartz_trim",
-    "url": "/items/chainmail_leggings_quartz_trim.png"
-  },
-  {
     "name": "Charcoal",
     "texture": "charcoal",
     "url": "/items/charcoal.png"
@@ -650,19 +630,9 @@
     "url": "/items/copper_bars.png"
   },
   {
-    "name": "Copper Boots",
-    "texture": "copper_boots_quartz_trim",
-    "url": "/items/copper_boots_quartz_trim.png"
-  },
-  {
     "name": "Copper Chain",
     "texture": "copper_chain",
     "url": "/items/copper_chain.png"
-  },
-  {
-    "name": "Copper Chestplate",
-    "texture": "copper_chestplate_quartz_trim",
-    "url": "/items/copper_chestplate_quartz_trim.png"
   },
   {
     "name": "Copper Door",
@@ -673,11 +643,6 @@
     "name": "Copper Golem Spawn Egg",
     "texture": "copper_golem_spawn_egg",
     "url": "/items/copper_golem_spawn_egg.png"
-  },
-  {
-    "name": "Copper Helmet",
-    "texture": "copper_helmet_quartz_trim",
-    "url": "/items/copper_helmet_quartz_trim.png"
   },
   {
     "name": "Copper Hoe",
@@ -698,11 +663,6 @@
     "name": "Copper Lantern",
     "texture": "copper_lantern",
     "url": "/items/copper_lantern.png"
-  },
-  {
-    "name": "Copper Leggings",
-    "texture": "copper_leggings_quartz_trim",
-    "url": "/items/copper_leggings_quartz_trim.png"
   },
   {
     "name": "Copper Nautilus Armor",
@@ -925,21 +885,6 @@
     "url": "/items/diamond_axe.png"
   },
   {
-    "name": "Diamond Boots",
-    "texture": "diamond_boots_quartz_trim",
-    "url": "/items/diamond_boots_quartz_trim.png"
-  },
-  {
-    "name": "Diamond Chestplate",
-    "texture": "diamond_chestplate_quartz_trim",
-    "url": "/items/diamond_chestplate_quartz_trim.png"
-  },
-  {
-    "name": "Diamond Helmet",
-    "texture": "diamond_helmet_quartz_trim",
-    "url": "/items/diamond_helmet_quartz_trim.png"
-  },
-  {
     "name": "Diamond Hoe",
     "texture": "diamond_hoe",
     "url": "/items/diamond_hoe.png"
@@ -948,11 +893,6 @@
     "name": "Diamond Horse Armor",
     "texture": "diamond_horse_armor",
     "url": "/items/diamond_horse_armor.png"
-  },
-  {
-    "name": "Diamond Leggings",
-    "texture": "diamond_leggings_quartz_trim",
-    "url": "/items/diamond_leggings_quartz_trim.png"
   },
   {
     "name": "Diamond Nautilus Armor",
@@ -1135,11 +1075,6 @@
     "url": "/items/field_masoned_banner_pattern.png"
   },
   {
-    "name": "Filled Map",
-    "texture": "filled_map",
-    "url": "/items/filled_map.png"
-  },
-  {
     "name": "Fire Charge",
     "texture": "fire_charge",
     "url": "/items/fire_charge.png"
@@ -1163,11 +1098,6 @@
     "name": "Firework Rocket",
     "texture": "firework_rocket",
     "url": "/items/firework_rocket.png"
-  },
-  {
-    "name": "Firework Star",
-    "texture": "firework_star",
-    "url": "/items/firework_star.png"
   },
   {
     "name": "Flint",
@@ -1315,24 +1245,9 @@
     "url": "/items/golden_axe.png"
   },
   {
-    "name": "Golden Boots",
-    "texture": "golden_boots_quartz_trim",
-    "url": "/items/golden_boots_quartz_trim.png"
-  },
-  {
     "name": "Golden Carrot",
     "texture": "golden_carrot",
     "url": "/items/golden_carrot.png"
-  },
-  {
-    "name": "Golden Chestplate",
-    "texture": "golden_chestplate_quartz_trim",
-    "url": "/items/golden_chestplate_quartz_trim.png"
-  },
-  {
-    "name": "Golden Helmet",
-    "texture": "golden_helmet_quartz_trim",
-    "url": "/items/golden_helmet_quartz_trim.png"
   },
   {
     "name": "Golden Hoe",
@@ -1343,11 +1258,6 @@
     "name": "Golden Horse Armor",
     "texture": "golden_horse_armor",
     "url": "/items/golden_horse_armor.png"
-  },
-  {
-    "name": "Golden Leggings",
-    "texture": "golden_leggings_quartz_trim",
-    "url": "/items/golden_leggings_quartz_trim.png"
   },
   {
     "name": "Golden Nautilus Armor",
@@ -1530,19 +1440,9 @@
     "url": "/items/iron_bars.png"
   },
   {
-    "name": "Iron Boots",
-    "texture": "iron_boots_quartz_trim",
-    "url": "/items/iron_boots_quartz_trim.png"
-  },
-  {
     "name": "Iron Chain",
     "texture": "iron_chain",
     "url": "/items/iron_chain.png"
-  },
-  {
-    "name": "Iron Chestplate",
-    "texture": "iron_chestplate_quartz_trim",
-    "url": "/items/iron_chestplate_quartz_trim.png"
   },
   {
     "name": "Iron Door",
@@ -1553,11 +1453,6 @@
     "name": "Iron Golem Spawn Egg",
     "texture": "iron_golem_spawn_egg",
     "url": "/items/iron_golem_spawn_egg.png"
-  },
-  {
-    "name": "Iron Helmet",
-    "texture": "iron_helmet_quartz_trim",
-    "url": "/items/iron_helmet_quartz_trim.png"
   },
   {
     "name": "Iron Hoe",
@@ -1573,11 +1468,6 @@
     "name": "Iron Ingot",
     "texture": "iron_ingot",
     "url": "/items/iron_ingot.png"
-  },
-  {
-    "name": "Iron Leggings",
-    "texture": "iron_leggings_quartz_trim",
-    "url": "/items/iron_leggings_quartz_trim.png"
   },
   {
     "name": "Iron Nautilus Armor",
@@ -1700,31 +1590,6 @@
     "url": "/items/leather.png"
   },
   {
-    "name": "Leather Boots",
-    "texture": "leather_boots_quartz_trim",
-    "url": "/items/leather_boots_quartz_trim.png"
-  },
-  {
-    "name": "Leather Chestplate",
-    "texture": "leather_chestplate_quartz_trim",
-    "url": "/items/leather_chestplate_quartz_trim.png"
-  },
-  {
-    "name": "Leather Helmet",
-    "texture": "leather_helmet_quartz_trim",
-    "url": "/items/leather_helmet_quartz_trim.png"
-  },
-  {
-    "name": "Leather Horse Armor",
-    "texture": "leather_horse_armor",
-    "url": "/items/leather_horse_armor.png"
-  },
-  {
-    "name": "Leather Leggings",
-    "texture": "leather_leggings_quartz_trim",
-    "url": "/items/leather_leggings_quartz_trim.png"
-  },
-  {
     "name": "Lever",
     "texture": "lever",
     "url": "/items/lever.png"
@@ -1808,11 +1673,6 @@
     "name": "Lime Stained Glass Pane",
     "texture": "lime_stained_glass_pane",
     "url": "/items/lime_stained_glass_pane.png"
-  },
-  {
-    "name": "Lingering Potion",
-    "texture": "lingering_potion",
-    "url": "/items/lingering_potion.png"
   },
   {
     "name": "Llama Spawn Egg",
@@ -2095,21 +1955,6 @@
     "url": "/items/netherite_axe.png"
   },
   {
-    "name": "Netherite Boots",
-    "texture": "netherite_boots_quartz_trim",
-    "url": "/items/netherite_boots_quartz_trim.png"
-  },
-  {
-    "name": "Netherite Chestplate",
-    "texture": "netherite_chestplate_quartz_trim",
-    "url": "/items/netherite_chestplate_quartz_trim.png"
-  },
-  {
-    "name": "Netherite Helmet",
-    "texture": "netherite_helmet_quartz_trim",
-    "url": "/items/netherite_helmet_quartz_trim.png"
-  },
-  {
     "name": "Netherite Hoe",
     "texture": "netherite_hoe",
     "url": "/items/netherite_hoe.png"
@@ -2123,11 +1968,6 @@
     "name": "Netherite Ingot",
     "texture": "netherite_ingot",
     "url": "/items/netherite_ingot.png"
-  },
-  {
-    "name": "Netherite Leggings",
-    "texture": "netherite_leggings_quartz_trim",
-    "url": "/items/netherite_leggings_quartz_trim.png"
   },
   {
     "name": "Netherite Nautilus Armor",
@@ -2208,11 +2048,6 @@
     "name": "Ominous Trial Key",
     "texture": "ominous_trial_key",
     "url": "/items/ominous_trial_key.png"
-  },
-  {
-    "name": "Open Eyeblossom",
-    "texture": "open_eyeblossom",
-    "url": "/items/open_eyeblossom.png"
   },
   {
     "name": "Orange Candle",
@@ -2443,11 +2278,6 @@
     "name": "Potato",
     "texture": "potato",
     "url": "/items/potato.png"
-  },
-  {
-    "name": "Potion",
-    "texture": "potion",
-    "url": "/items/potion.png"
   },
   {
     "name": "Powder Snow Bucket",
@@ -2850,11 +2680,6 @@
     "url": "/items/spire_armor_trim_smithing_template.png"
   },
   {
-    "name": "Splash Potion",
-    "texture": "splash_potion",
-    "url": "/items/splash_potion.png"
-  },
-  {
     "name": "Spruce Boat",
     "texture": "spruce_boat",
     "url": "/items/spruce_boat.png"
@@ -3000,11 +2825,6 @@
     "url": "/items/tide_armor_trim_smithing_template.png"
   },
   {
-    "name": "Tipped Arrow",
-    "texture": "tipped_arrow",
-    "url": "/items/tipped_arrow.png"
-  },
-  {
     "name": "Tnt Minecart",
     "texture": "tnt_minecart",
     "url": "/items/tnt_minecart.png"
@@ -3078,11 +2898,6 @@
     "name": "Turtle Egg",
     "texture": "turtle_egg",
     "url": "/items/turtle_egg.png"
-  },
-  {
-    "name": "Turtle Helmet",
-    "texture": "turtle_helmet_quartz_trim",
-    "url": "/items/turtle_helmet_quartz_trim.png"
   },
   {
     "name": "Turtle Scute",
@@ -4833,5 +4648,45 @@
     "name": "Yellow Wool",
     "texture": "yellow_wool",
     "url": "/items/yellow_wool.png"
+  },
+  {
+    "name": "Filled Map",
+    "texture": "filled_map",
+    "url": "/items/filled_map.png"
+  },
+  {
+    "name": "Firework Star",
+    "texture": "firework_star",
+    "url": "/items/firework_star.png"
+  },
+  {
+    "name": "Leather Horse Armor",
+    "texture": "leather_horse_armor",
+    "url": "/items/leather_horse_armor.png"
+  },
+  {
+    "name": "Lingering Potion",
+    "texture": "lingering_potion",
+    "url": "/items/lingering_potion.png"
+  },
+  {
+    "name": "Open Eyeblossom",
+    "texture": "open_eyeblossom",
+    "url": "/items/open_eyeblossom.png"
+  },
+  {
+    "name": "Potion",
+    "texture": "potion",
+    "url": "/items/potion.png"
+  },
+  {
+    "name": "Splash Potion",
+    "texture": "splash_potion",
+    "url": "/items/splash_potion.png"
+  },
+  {
+    "name": "Tipped Arrow",
+    "texture": "tipped_arrow",
+    "url": "/items/tipped_arrow.png"
   }
 ]
