@@ -495,6 +495,7 @@ async function generate(): Promise<void> {
         );
 
         const itemsJsonPath = join(process.cwd(), "public", "items.json");
+        items.sort((a, b) => a.texture.localeCompare(b.texture));
         writeFileSync(itemsJsonPath, JSON.stringify(items, null, 2));
         console.log(`\n\nItems list saved to: ${itemsJsonPath}`);
 
