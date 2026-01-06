@@ -111,6 +111,7 @@ export default function ItemSelector({
                                 {recentItems.map((item) => (
                                     <button
                                         key={item.name}
+                                        type="button"
                                         className="w-16 h-16 bg-gray-800 rounded border border-gray-700 hover:border-primary transition-colors p-1 flex items-center justify-center relative"
                                         onClick={() => onSelectItem(item)}
                                         title={item.name}
@@ -138,6 +139,7 @@ export default function ItemSelector({
                         <div className="grid grid-cols-4 gap-2">
                             {[...Array(16)].map((_, i) => (
                                 <Skeleton
+                                    // biome-ignore lint/suspicious/noArrayIndexKey: Static placeholder array with fixed size - items are never reordered, added, or removed
                                     key={i}
                                     className="w-16 h-16 bg-gray-800"
                                 />
@@ -159,6 +161,7 @@ export default function ItemSelector({
                                     filteredItems.map((item) => (
                                         <button
                                             key={item.name}
+                                            type="button"
                                             className="w-16 h-16 bg-gray-800 rounded border border-gray-700 hover:border-primary transition-colors p-1 flex items-center justify-center"
                                             onClick={() => onSelectItem(item)}
                                             title={item.name}

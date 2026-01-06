@@ -46,6 +46,7 @@ export function SlotDetectionSettings({
                         <div className="absolute top-0 left-0 w-full h-full">
                             {previewSlots.map((slot, index) => (
                                 <div
+                                    // biome-ignore lint/suspicious/noArrayIndexKey: slots array is read-only data
                                     key={index}
                                     className="absolute border-2 border-blue-500"
                                     style={{
@@ -61,10 +62,14 @@ export function SlotDetectionSettings({
 
                     <div className="space-y-4">
                         <div>
-                            <label className="text-sm text-gray-400">
+                            <label
+                                className="text-sm text-gray-400"
+                                htmlFor="min-slot-size"
+                            >
                                 Minimum Slot Size ({minSlotSize}px)
                             </label>
                             <input
+                                id="min-slot-size"
                                 type="range"
                                 min="10"
                                 max={Math.min(
@@ -74,7 +79,7 @@ export function SlotDetectionSettings({
                                 value={minSlotSize}
                                 onChange={(e) =>
                                     onMinSlotSizeChange(
-                                        parseInt(e.target.value),
+                                        parseInt(e.target.value, 10),
                                     )
                                 }
                                 className="w-full"

@@ -49,6 +49,7 @@ export function GuiSelectorModal({
                         {guis.map((gui) => (
                             <button
                                 key={gui.path}
+                                type="button"
                                 className={`p-4 rounded-lg transition-colors flex flex-col items-center ${
                                     selectedGui.path === gui.path
                                         ? "bg-gray-700"

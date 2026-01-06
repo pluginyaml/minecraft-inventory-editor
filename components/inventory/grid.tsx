@@ -44,7 +44,7 @@ export function InventoryGrid({
                 const containerHeight = rect.height;
                 const containerAspectRatio = containerWidth / containerHeight;
 
-                let width, height;
+                let width: number, height: number;
                 if (containerAspectRatio > aspectRatio) {
                     // コンテナが横長の場合
                     height = containerHeight;
@@ -84,6 +84,7 @@ export function InventoryGrid({
 
                 return (
                     <div
+                        // biome-ignore lint/suspicious/noArrayIndexKey: Slot positions array is static and maintains consistent order, index is stable identifier for each slot
                         key={index}
                         style={{
                             position: "absolute",

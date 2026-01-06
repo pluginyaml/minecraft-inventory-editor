@@ -79,11 +79,12 @@ export default function InventoryEditor() {
             setSlotPositions(slots);
         };
         initializeSlots();
-    }, []);
+    }, [selectedGui.minSlotSize, selectedGui.path]);
 
+    // biome-ignore lint/correctness/useExhaustiveDependencies: updateImageSize is a stable function defined in component scope and doesn't need to be in dependencies
     useEffect(() => {
         updateImageSize(gridImage);
-    }, []);
+    }, [gridImage]);
 
     const handleSelectMinecraftItem = (item: MinecraftItem) => {
         const id = `item-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
@@ -346,6 +347,7 @@ export default function InventoryEditor() {
                         {DEFAULT_GUI_IMAGES.map((gui) => (
                             <button
                                 key={gui.path}
+                                type="button"
                                 className={`w-full p-2 rounded transition-colors flex flex-col items-center ${
                                     gridImage === gui.path
                                         ? "bg-gray-700"
@@ -441,6 +443,7 @@ export default function InventoryEditor() {
                         {recentItems.map((item, index) => (
                             <button
                                 key={`${item.url}-${index}`}
+                                type="button"
                                 className="relative aspect-square bg-gray-800 rounded-lg p-0.5 sm:p-1 hover:bg-gray-700 transition-colors"
                             >
                                 <Image

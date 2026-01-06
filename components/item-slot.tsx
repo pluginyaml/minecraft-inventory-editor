@@ -22,6 +22,8 @@ export default function ItemSlot({
     onDragStart,
 }: ItemSlotProps) {
     return (
+        // biome-ignore lint/a11y/noStaticElementInteractions: Drag and drop functionality requires native DOM events
+        // biome-ignore lint/a11y/useKeyWithClickEvents: Click handler is for game inventory interaction, keyboard alternative provided at parent level
         <div
             className={cn(
                 "w-10 h-10 bg-gray-500/50 border border-gray-300 flex items-center justify-center",
@@ -32,10 +34,11 @@ export default function ItemSlot({
             onDragOver={onDragOver}
         >
             {item && (
+                // biome-ignore lint/a11y/noStaticElementInteractions: Draggable item requires onDragStart event on non-interactive element
                 <div
                     className="w-full h-full flex items-center justify-center"
                     draggable={!!onDragStart}
-                    onDragStart={() => onDragStart && onDragStart(item.id)}
+                    onDragStart={() => onDragStart?.(item.id)}
                 >
                     <Image
                         src={item.image || "/placeholder.svg"}
