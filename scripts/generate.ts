@@ -37,20 +37,18 @@ type ItemDefinition = {
           }
         | {
               type: "minecraft:select";
-              cases: {
-                  model:
-                      | {
-                            type: "minecraft:model";
-                            model: string;
-                        }
-                      | {
-                            type: "minecraft:special";
-                            model: {
-                                type: "minecraft:copper_golem_statue";
-                                texture: string;
-                            };
-                        };
-              }[];
+              fallback:
+                  | {
+                        type: "minecraft:model";
+                        model: string;
+                    }
+                  | {
+                        type: "minecraft:special";
+                    }
+                  | {
+                        // fallback for unknown models
+                        type?: never;
+                    };
           };
 };
 
@@ -435,14 +433,19 @@ async function generate(): Promise<void> {
                         break;
                     }
                     case "minecraft:select": {
-                        switch (itemDef.model.cases[0].model.type) {
+                        switch (itemDef.model.fallback.type) {
                             case "minecraft:model": {
-                                modelPath = itemDef.model.cases[0].model.model;
+                                modelPath = itemDef.model.fallback.model;
                                 break;
                             }
                             case "minecraft:special": {
                                 modelPath = null; // Unsupported
                                 break;
+                            }
+                            default: {
+                                console.warn(
+                                    `Unsupported item model: ${itemName} (${itemDef.model.fallback.type})`,
+                                );
                             }
                         }
                         break;

@@ -255,6 +255,11 @@
     "url": "/items/birch_sign.png"
   },
   {
+    "name": "Black Bundle",
+    "texture": "black_bundle",
+    "url": "/items/black_bundle.png"
+  },
+  {
     "name": "Black Candle",
     "texture": "black_candle",
     "url": "/items/black_candle.png"
@@ -318,6 +323,11 @@
     "name": "Blaze Spawn Egg",
     "texture": "blaze_spawn_egg",
     "url": "/items/blaze_spawn_egg.png"
+  },
+  {
+    "name": "Blue Bundle",
+    "texture": "blue_bundle",
+    "url": "/items/blue_bundle.png"
   },
   {
     "name": "Blue Candle",
@@ -465,6 +475,11 @@
     "url": "/items/bricks.png"
   },
   {
+    "name": "Brown Bundle",
+    "texture": "brown_bundle",
+    "url": "/items/brown_bundle.png"
+  },
+  {
     "name": "Brown Candle",
     "texture": "brown_candle",
     "url": "/items/brown_candle.png"
@@ -550,6 +565,11 @@
     "url": "/items/budding_amethyst.png"
   },
   {
+    "name": "Bundle",
+    "texture": "bundle",
+    "url": "/items/bundle.png"
+  },
+  {
     "name": "Burn Pottery Sherd",
     "texture": "burn_pottery_sherd",
     "url": "/items/burn_pottery_sherd.png"
@@ -568,11 +588,6 @@
     "name": "Cake",
     "texture": "cake",
     "url": "/items/cake.png"
-  },
-  {
-    "name": "Calcite",
-    "texture": "calcite",
-    "url": "/items/calcite.png"
   },
   {
     "name": "Camel Husk Spawn Egg",
@@ -618,6 +633,26 @@
     "name": "Cave Spider Spawn Egg",
     "texture": "cave_spider_spawn_egg",
     "url": "/items/cave_spider_spawn_egg.png"
+  },
+  {
+    "name": "Chainmail Boots",
+    "texture": "chainmail_boots",
+    "url": "/items/chainmail_boots.png"
+  },
+  {
+    "name": "Chainmail Chestplate",
+    "texture": "chainmail_chestplate",
+    "url": "/items/chainmail_chestplate.png"
+  },
+  {
+    "name": "Chainmail Helmet",
+    "texture": "chainmail_helmet",
+    "url": "/items/chainmail_helmet.png"
+  },
+  {
+    "name": "Chainmail Leggings",
+    "texture": "chainmail_leggings",
+    "url": "/items/chainmail_leggings.png"
   },
   {
     "name": "Charcoal",
@@ -875,6 +910,11 @@
     "url": "/items/copper_block.png"
   },
   {
+    "name": "Copper Boots",
+    "texture": "copper_boots",
+    "url": "/items/copper_boots.png"
+  },
+  {
     "name": "Copper Bulb",
     "texture": "copper_bulb",
     "url": "/items/copper_bulb.png"
@@ -893,6 +933,11 @@
     "name": "Waxed Copper Chain",
     "texture": "copper_chain",
     "url": "/items/copper_chain.png"
+  },
+  {
+    "name": "Copper Chestplate",
+    "texture": "copper_chestplate",
+    "url": "/items/copper_chestplate.png"
   },
   {
     "name": "Copper Door",
@@ -920,6 +965,11 @@
     "url": "/items/copper_grate.png"
   },
   {
+    "name": "Copper Helmet",
+    "texture": "copper_helmet",
+    "url": "/items/copper_helmet.png"
+  },
+  {
     "name": "Copper Hoe",
     "texture": "copper_hoe",
     "url": "/items/copper_hoe.png"
@@ -945,6 +995,11 @@
     "url": "/items/copper_lantern.png"
   },
   {
+    "name": "Copper Leggings",
+    "texture": "copper_leggings",
+    "url": "/items/copper_leggings.png"
+  },
+  {
     "name": "Copper Nautilus Armor",
     "texture": "copper_nautilus_armor",
     "url": "/items/copper_nautilus_armor.png"
@@ -968,11 +1023,6 @@
     "name": "Copper Shovel",
     "texture": "copper_shovel",
     "url": "/items/copper_shovel.png"
-  },
-  {
-    "name": "Copper Spear",
-    "texture": "copper_spear",
-    "url": "/items/copper_spear.png"
   },
   {
     "name": "Copper Sword",
@@ -1083,6 +1133,11 @@
     "name": "Waxed Cut Copper",
     "texture": "cut_copper",
     "url": "/items/cut_copper.png"
+  },
+  {
+    "name": "Cyan Bundle",
+    "texture": "cyan_bundle",
+    "url": "/items/cyan_bundle.png"
   },
   {
     "name": "Cyan Candle",
@@ -1335,6 +1390,21 @@
     "url": "/items/diamond_block.png"
   },
   {
+    "name": "Diamond Boots",
+    "texture": "diamond_boots",
+    "url": "/items/diamond_boots.png"
+  },
+  {
+    "name": "Diamond Chestplate",
+    "texture": "diamond_chestplate",
+    "url": "/items/diamond_chestplate.png"
+  },
+  {
+    "name": "Diamond Helmet",
+    "texture": "diamond_helmet",
+    "url": "/items/diamond_helmet.png"
+  },
+  {
     "name": "Diamond Hoe",
     "texture": "diamond_hoe",
     "url": "/items/diamond_hoe.png"
@@ -1343,6 +1413,11 @@
     "name": "Diamond Horse Armor",
     "texture": "diamond_horse_armor",
     "url": "/items/diamond_horse_armor.png"
+  },
+  {
+    "name": "Diamond Leggings",
+    "texture": "diamond_leggings",
+    "url": "/items/diamond_leggings.png"
   },
   {
     "name": "Diamond Nautilus Armor",
@@ -1363,11 +1438,6 @@
     "name": "Diamond Shovel",
     "texture": "diamond_shovel",
     "url": "/items/diamond_shovel.png"
-  },
-  {
-    "name": "Diamond Spear",
-    "texture": "diamond_spear",
-    "url": "/items/diamond_spear.png"
   },
   {
     "name": "Diamond Sword",
@@ -1850,9 +1920,24 @@
     "url": "/items/golden_axe.png"
   },
   {
+    "name": "Golden Boots",
+    "texture": "golden_boots",
+    "url": "/items/golden_boots.png"
+  },
+  {
     "name": "Golden Carrot",
     "texture": "golden_carrot",
     "url": "/items/golden_carrot.png"
+  },
+  {
+    "name": "Golden Chestplate",
+    "texture": "golden_chestplate",
+    "url": "/items/golden_chestplate.png"
+  },
+  {
+    "name": "Golden Helmet",
+    "texture": "golden_helmet",
+    "url": "/items/golden_helmet.png"
   },
   {
     "name": "Golden Hoe",
@@ -1863,6 +1948,11 @@
     "name": "Golden Horse Armor",
     "texture": "golden_horse_armor",
     "url": "/items/golden_horse_armor.png"
+  },
+  {
+    "name": "Golden Leggings",
+    "texture": "golden_leggings",
+    "url": "/items/golden_leggings.png"
   },
   {
     "name": "Golden Nautilus Armor",
@@ -1880,11 +1970,6 @@
     "url": "/items/golden_shovel.png"
   },
   {
-    "name": "Golden Spear",
-    "texture": "golden_spear",
-    "url": "/items/golden_spear.png"
-  },
-  {
     "name": "Golden Sword",
     "texture": "golden_sword",
     "url": "/items/golden_sword.png"
@@ -1898,6 +1983,11 @@
     "name": "Gravel",
     "texture": "gravel",
     "url": "/items/gravel.png"
+  },
+  {
+    "name": "Gray Bundle",
+    "texture": "gray_bundle",
+    "url": "/items/gray_bundle.png"
   },
   {
     "name": "Gray Candle",
@@ -1943,6 +2033,11 @@
     "name": "Gray Wool",
     "texture": "gray_wool",
     "url": "/items/gray_wool.png"
+  },
+  {
+    "name": "Green Bundle",
+    "texture": "green_bundle",
+    "url": "/items/green_bundle.png"
   },
   {
     "name": "Green Candle",
@@ -2125,9 +2220,19 @@
     "url": "/items/iron_block.png"
   },
   {
+    "name": "Iron Boots",
+    "texture": "iron_boots",
+    "url": "/items/iron_boots.png"
+  },
+  {
     "name": "Iron Chain",
     "texture": "iron_chain",
     "url": "/items/iron_chain.png"
+  },
+  {
+    "name": "Iron Chestplate",
+    "texture": "iron_chestplate",
+    "url": "/items/iron_chestplate.png"
   },
   {
     "name": "Iron Door",
@@ -2138,6 +2243,11 @@
     "name": "Iron Golem Spawn Egg",
     "texture": "iron_golem_spawn_egg",
     "url": "/items/iron_golem_spawn_egg.png"
+  },
+  {
+    "name": "Iron Helmet",
+    "texture": "iron_helmet",
+    "url": "/items/iron_helmet.png"
   },
   {
     "name": "Iron Hoe",
@@ -2153,6 +2263,11 @@
     "name": "Iron Ingot",
     "texture": "iron_ingot",
     "url": "/items/iron_ingot.png"
+  },
+  {
+    "name": "Iron Leggings",
+    "texture": "iron_leggings",
+    "url": "/items/iron_leggings.png"
   },
   {
     "name": "Iron Nautilus Armor",
@@ -2178,11 +2293,6 @@
     "name": "Iron Shovel",
     "texture": "iron_shovel",
     "url": "/items/iron_shovel.png"
-  },
-  {
-    "name": "Iron Spear",
-    "texture": "iron_spear",
-    "url": "/items/iron_spear.png"
   },
   {
     "name": "Iron Sword",
@@ -2295,9 +2405,29 @@
     "url": "/items/leather.png"
   },
   {
+    "name": "Leather Boots",
+    "texture": "leather_boots",
+    "url": "/items/leather_boots.png"
+  },
+  {
+    "name": "Leather Chestplate",
+    "texture": "leather_chestplate",
+    "url": "/items/leather_chestplate.png"
+  },
+  {
+    "name": "Leather Helmet",
+    "texture": "leather_helmet",
+    "url": "/items/leather_helmet.png"
+  },
+  {
     "name": "Leather Horse Armor",
     "texture": "leather_horse_armor",
     "url": "/items/leather_horse_armor.png"
+  },
+  {
+    "name": "Leather Leggings",
+    "texture": "leather_leggings",
+    "url": "/items/leather_leggings.png"
   },
   {
     "name": "Lever",
@@ -2306,8 +2436,13 @@
   },
   {
     "name": "Light",
-    "texture": "light_00",
-    "url": "/items/light_00.png"
+    "texture": "light",
+    "url": "/items/light.png"
+  },
+  {
+    "name": "Light Blue Bundle",
+    "texture": "light_blue_bundle",
+    "url": "/items/light_blue_bundle.png"
   },
   {
     "name": "Light Blue Candle",
@@ -2353,6 +2488,11 @@
     "name": "Light Blue Wool",
     "texture": "light_blue_wool",
     "url": "/items/light_blue_wool.png"
+  },
+  {
+    "name": "Light Gray Bundle",
+    "texture": "light_gray_bundle",
+    "url": "/items/light_gray_bundle.png"
   },
   {
     "name": "Light Gray Candle",
@@ -2415,6 +2555,11 @@
     "url": "/items/lily_pad.png"
   },
   {
+    "name": "Lime Bundle",
+    "texture": "lime_bundle",
+    "url": "/items/lime_bundle.png"
+  },
+  {
     "name": "Lime Candle",
     "texture": "lime_candle",
     "url": "/items/lime_candle.png"
@@ -2473,6 +2618,11 @@
     "name": "Mace",
     "texture": "mace",
     "url": "/items/mace.png"
+  },
+  {
+    "name": "Magenta Bundle",
+    "texture": "magenta_bundle",
+    "url": "/items/magenta_bundle.png"
   },
   {
     "name": "Magenta Candle",
@@ -2840,6 +2990,21 @@
     "url": "/items/netherite_block.png"
   },
   {
+    "name": "Netherite Boots",
+    "texture": "netherite_boots",
+    "url": "/items/netherite_boots.png"
+  },
+  {
+    "name": "Netherite Chestplate",
+    "texture": "netherite_chestplate",
+    "url": "/items/netherite_chestplate.png"
+  },
+  {
+    "name": "Netherite Helmet",
+    "texture": "netherite_helmet",
+    "url": "/items/netherite_helmet.png"
+  },
+  {
     "name": "Netherite Hoe",
     "texture": "netherite_hoe",
     "url": "/items/netherite_hoe.png"
@@ -2853,6 +3018,11 @@
     "name": "Netherite Ingot",
     "texture": "netherite_ingot",
     "url": "/items/netherite_ingot.png"
+  },
+  {
+    "name": "Netherite Leggings",
+    "texture": "netherite_leggings",
+    "url": "/items/netherite_leggings.png"
   },
   {
     "name": "Netherite Nautilus Armor",
@@ -2873,11 +3043,6 @@
     "name": "Netherite Shovel",
     "texture": "netherite_shovel",
     "url": "/items/netherite_shovel.png"
-  },
-  {
-    "name": "Netherite Spear",
-    "texture": "netherite_spear",
-    "url": "/items/netherite_spear.png"
   },
   {
     "name": "Netherite Sword",
@@ -2958,6 +3123,11 @@
     "name": "Open Eyeblossom",
     "texture": "open_eyeblossom",
     "url": "/items/open_eyeblossom.png"
+  },
+  {
+    "name": "Orange Bundle",
+    "texture": "orange_bundle",
+    "url": "/items/orange_bundle.png"
   },
   {
     "name": "Orange Candle",
@@ -3225,6 +3395,11 @@
     "url": "/items/pillager_spawn_egg.png"
   },
   {
+    "name": "Pink Bundle",
+    "texture": "pink_bundle",
+    "url": "/items/pink_bundle.png"
+  },
+  {
     "name": "Pink Candle",
     "texture": "pink_candle",
     "url": "/items/pink_candle.png"
@@ -3430,6 +3605,11 @@
     "url": "/items/pumpkin_seeds.png"
   },
   {
+    "name": "Purple Bundle",
+    "texture": "purple_bundle",
+    "url": "/items/purple_bundle.png"
+  },
+  {
     "name": "Purple Candle",
     "texture": "purple_candle",
     "url": "/items/purple_candle.png"
@@ -3558,6 +3738,11 @@
     "name": "Raw Iron Block",
     "texture": "raw_iron_block",
     "url": "/items/raw_iron_block.png"
+  },
+  {
+    "name": "Red Bundle",
+    "texture": "red_bundle",
+    "url": "/items/red_bundle.png"
   },
   {
     "name": "Red Candle",
@@ -4005,11 +4190,6 @@
     "url": "/items/spruce_sign.png"
   },
   {
-    "name": "Spyglass",
-    "texture": "spyglass",
-    "url": "/items/spyglass.png"
-  },
-  {
     "name": "Squid Spawn Egg",
     "texture": "squid_spawn_egg",
     "url": "/items/squid_spawn_egg.png"
@@ -4058,11 +4238,6 @@
     "name": "Stone Shovel",
     "texture": "stone_shovel",
     "url": "/items/stone_shovel.png"
-  },
-  {
-    "name": "Stone Spear",
-    "texture": "stone_spear",
-    "url": "/items/stone_spear.png"
   },
   {
     "name": "Stone Sword",
@@ -4156,8 +4331,8 @@
   },
   {
     "name": "Test Block",
-    "texture": "test_block_log",
-    "url": "/items/test_block_log.png"
+    "texture": "test_block_start",
+    "url": "/items/test_block_start.png"
   },
   {
     "name": "Test Instance Block",
@@ -4215,11 +4390,6 @@
     "url": "/items/trial_key.png"
   },
   {
-    "name": "Trident",
-    "texture": "trident",
-    "url": "/items/trident.png"
-  },
-  {
     "name": "Tripwire Hook",
     "texture": "tripwire_hook",
     "url": "/items/tripwire_hook.png"
@@ -4268,6 +4438,11 @@
     "name": "Turtle Egg",
     "texture": "turtle_egg",
     "url": "/items/turtle_egg.png"
+  },
+  {
+    "name": "Turtle Helmet",
+    "texture": "turtle_helmet",
+    "url": "/items/turtle_helmet.png"
   },
   {
     "name": "Turtle Scute",
@@ -4485,6 +4660,11 @@
     "url": "/items/wheat_seeds.png"
   },
   {
+    "name": "White Bundle",
+    "texture": "white_bundle",
+    "url": "/items/white_bundle.png"
+  },
+  {
     "name": "White Candle",
     "texture": "white_candle",
     "url": "/items/white_candle.png"
@@ -4595,11 +4775,6 @@
     "url": "/items/wooden_shovel.png"
   },
   {
-    "name": "Wooden Spear",
-    "texture": "wooden_spear",
-    "url": "/items/wooden_spear.png"
-  },
-  {
     "name": "Wooden Sword",
     "texture": "wooden_sword",
     "url": "/items/wooden_sword.png"
@@ -4613,6 +4788,11 @@
     "name": "Written Book",
     "texture": "written_book",
     "url": "/items/written_book.png"
+  },
+  {
+    "name": "Yellow Bundle",
+    "texture": "yellow_bundle",
+    "url": "/items/yellow_bundle.png"
   },
   {
     "name": "Yellow Candle",
