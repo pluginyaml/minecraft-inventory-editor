@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { execSync } from "node:child_process";
+import { exec } from "node:child_process";
 import {
     cpSync,
     existsSync,
@@ -9,7 +9,10 @@ import {
     writeFileSync,
 } from "node:fs";
 import { join } from "node:path";
+import { promisify } from "node:util";
 import sharp from "sharp";
+
+const execAsync = promisify(exec);
 
 interface GitHubBranch {
     name: string;
@@ -180,7 +183,7 @@ function resolveTexturePath(texturePath: string): string {
     return texturePath;
 }
 
-function compileJavaRenderer(): void {
+async function compileJavaRenderer(): Promise<void> {
     const javaDir = join(process.cwd(), "java-renderer");
     const javaFile = join(javaDir, "BlockRenderer.java");
 
@@ -191,11 +194,10 @@ function compileJavaRenderer(): void {
 
     try {
         console.log("Compiling Java renderer...");
-        execSync(
+        await execAsync(
             `C:\\Users\\gbv_s\\.jdks\\corretto-21.0.9\\bin\\javac "${javaFile}"`,
             {
                 cwd: javaDir,
-                stdio: "inherit",
             },
         );
         console.log("Java renderer compiled successfully");
@@ -348,11 +350,8 @@ async function renderCubeAll(
         }
 
         // 引数形式: <output> <render_type> <...textures>
-        execSync(
+        await execAsync(
             `C:\\Users\\gbv_s\\.jdks\\corretto-21.0.9\\bin\\java -cp "${javaDir}" BlockRenderer "${outputPath}" "cube_all" "${textureSourcePath}"`,
-            {
-                stdio: "pipe", // エラー出力を抑制（必要に応じて変更）
-            },
         );
 
         return existsSync(outputPath);
@@ -369,7 +368,7 @@ function itemNameToDisplayName(name: string): string {
         .join(" ");
 }
 
-function prepareLocalRepo(version: string): string {
+async function prepareLocalRepo(version: string): Promise<string> {
     const cacheRoot = join(process.cwd(), ".cache", "minecraft-assets");
     const repoRoot = join(cacheRoot, version);
 
@@ -386,11 +385,8 @@ function prepareLocalRepo(version: string): string {
     }
 
     console.log(`Cloning ${repoUrl} (branch ${version}) into ${repoRoot}...`);
-    execSync(
+    await execAsync(
         `git clone --depth 1 --branch ${version} ${repoUrl} "${repoRoot}"`,
-        {
-            stdio: "inherit",
-        },
     );
 
     return repoRoot;
@@ -404,7 +400,7 @@ async function generate(): Promise<void> {
     console.log(`Latest version found: ${version}`);
 
     console.log(`Preparing local repository for version ${version}...`);
-    const repoRoot = prepareLocalRepo(version);
+    const repoRoot = await prepareLocalRepo(version);
     console.log(`Using assets from local repo: ${repoRoot}`);
 
     try {

@@ -4375,22 +4375,22 @@
     "url": "/items/wayfinder_armor_trim_smithing_template.png"
   },
   {
-    "name": "Waxed Weathered Chiseled Copper",
-    "texture": "weathered_chiseled_copper",
-    "url": "/items/weathered_chiseled_copper.png"
-  },
-  {
     "name": "Weathered Chiseled Copper",
     "texture": "weathered_chiseled_copper",
     "url": "/items/weathered_chiseled_copper.png"
   },
   {
-    "name": "Waxed Weathered Copper",
+    "name": "Waxed Weathered Chiseled Copper",
+    "texture": "weathered_chiseled_copper",
+    "url": "/items/weathered_chiseled_copper.png"
+  },
+  {
+    "name": "Weathered Copper",
     "texture": "weathered_copper",
     "url": "/items/weathered_copper.png"
   },
   {
-    "name": "Weathered Copper",
+    "name": "Waxed Weathered Copper",
     "texture": "weathered_copper",
     "url": "/items/weathered_copper.png"
   },
@@ -4405,12 +4405,12 @@
     "url": "/items/weathered_copper_bars.png"
   },
   {
-    "name": "Waxed Weathered Copper Bulb",
+    "name": "Weathered Copper Bulb",
     "texture": "weathered_copper_bulb",
     "url": "/items/weathered_copper_bulb.png"
   },
   {
-    "name": "Weathered Copper Bulb",
+    "name": "Waxed Weathered Copper Bulb",
     "texture": "weathered_copper_bulb",
     "url": "/items/weathered_copper_bulb.png"
   },
@@ -4435,12 +4435,12 @@
     "url": "/items/weathered_copper_door.png"
   },
   {
-    "name": "Waxed Weathered Copper Grate",
+    "name": "Weathered Copper Grate",
     "texture": "weathered_copper_grate",
     "url": "/items/weathered_copper_grate.png"
   },
   {
-    "name": "Weathered Copper Grate",
+    "name": "Waxed Weathered Copper Grate",
     "texture": "weathered_copper_grate",
     "url": "/items/weathered_copper_grate.png"
   },
@@ -4455,12 +4455,12 @@
     "url": "/items/weathered_copper_lantern.png"
   },
   {
-    "name": "Waxed Weathered Cut Copper",
+    "name": "Weathered Cut Copper",
     "texture": "weathered_cut_copper",
     "url": "/items/weathered_cut_copper.png"
   },
   {
-    "name": "Weathered Cut Copper",
+    "name": "Waxed Weathered Cut Copper",
     "texture": "weathered_cut_copper",
     "url": "/items/weathered_cut_copper.png"
   },
