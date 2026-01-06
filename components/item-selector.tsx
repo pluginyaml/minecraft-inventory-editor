@@ -107,7 +107,7 @@ export default function ItemSelector({
                             <h3 className="text-sm font-medium text-gray-400 mb-2">
                                 Recent Items
                             </h3>
-                            <div className="grid grid-cols-4 gap-2">
+                            <div className="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-10 gap-2">
                                 {recentItems.map((item) => (
                                     <button
                                         key={item.name}
@@ -136,7 +136,7 @@ export default function ItemSelector({
 
                     {/* All Items Section */}
                     {loading ? (
-                        <div className="grid grid-cols-4 gap-2">
+                        <div className="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-10 gap-2">
                             {[...Array(16)].map((_, i) => (
                                 <Skeleton
                                     // biome-ignore lint/suspicious/noArrayIndexKey: Static placeholder array with fixed size - items are never reordered, added, or removed
@@ -156,7 +156,7 @@ export default function ItemSelector({
                                     All Items
                                 </h3>
                             )}
-                            <div className="grid grid-cols-4 gap-2">
+                            <div className="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-10 gap-2">
                                 {filteredItems.length > 0 ? (
                                     filteredItems.map((item) => (
                                         <button
@@ -178,7 +178,7 @@ export default function ItemSelector({
                                         </button>
                                     ))
                                 ) : (
-                                    <div className="col-span-4 text-center py-8 text-gray-400">
+                                    <div className="col-span-full text-center py-8 text-gray-400">
                                         No items found matching {searchQuery}
                                     </div>
                                 )}

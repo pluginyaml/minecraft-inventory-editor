@@ -35,7 +35,7 @@ export function GuiSelectorModal({
 }: GuiSelectorModalProps) {
     return (
         <Dialog open={isOpen} onOpenChange={onClose}>
-            <DialogContent className="bg-gray-900 border-gray-800">
+            <DialogContent className="bg-gray-900 border-gray-800 max-w-5xl">
                 <DialogHeader>
                     <DialogTitle className="text-gray-200">
                         Select GUI

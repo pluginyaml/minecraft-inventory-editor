@@ -326,9 +326,9 @@ export default function InventoryEditor() {
     };
 
     return (
-        <div className="flex flex-col lg:flex-row gap-4">
+        <div className="flex flex-col lg:flex-row gap-4 h-full">
             {/* GUI List Sidebar - Desktop Only */}
-            <div className="hidden lg:block bg-gray-900 rounded-lg p-4 w-64 flex flex-col">
+            <div className="hidden bg-gray-900 rounded-lg p-4 w-64 lg:flex flex-col flex-shrink-0">
                 <div className="flex justify-between items-center mb-4">
                     <h2 className="text-lg font-bold text-gray-200">
                         Select GUI
@@ -342,7 +342,7 @@ export default function InventoryEditor() {
                         Upload
                     </Button>
                 </div>
-                <div className="overflow-y-auto h-[600px] -mx-4 px-4">
+                <div className="overflow-y-auto flex-1 -mx-4 px-4">
                     <div className="space-y-2">
                         {DEFAULT_GUI_IMAGES.map((gui) => (
                             <button
@@ -373,7 +373,7 @@ export default function InventoryEditor() {
             </div>
 
             {/* Main Editor Area */}
-            <div className="bg-gray-900 rounded-lg p-4 w-full lg:w-[600px] flex flex-col items-center">
+            <div className="bg-gray-900 rounded-lg p-4 flex-1 flex flex-col items-center min-w-0">
                 <div className="flex flex-wrap justify-between items-center w-full mb-4 gap-2">
                     <h1 className="text-2xl font-bold text-gray-200">
                         Minecraft Inventory Editor
@@ -402,7 +402,7 @@ export default function InventoryEditor() {
                     <p>Drag items between slots to move them</p>
                     <p>Right-click to remove an item</p>
                 </div>
-                <div className="relative w-full aspect-[512/264] rounded-lg overflow-hidden">
+                <div className="relative w-full flex-1 rounded-lg overflow-hidden min-h-0">
                     <Image
                         src={selectedGui.path}
                         alt="Inventory Grid"
@@ -434,11 +434,11 @@ export default function InventoryEditor() {
             </div>
 
             {/* Recent Items Sidebar */}
-            <div className="hidden lg:block bg-gray-900 rounded-lg p-4 w-64">
+            <div className="hidden lg:block bg-gray-900 rounded-lg p-4 w-64 flex flex-col flex-shrink-0">
                 <h2 className="text-lg font-bold mb-4 text-gray-200">
                     Recent Items
                 </h2>
-                <div className="overflow-y-auto h-[600px]">
+                <div className="overflow-y-auto flex-1">
                     <div className="grid grid-cols-3 gap-2">
                         {recentItems.map((item, index) => (
                             <button
