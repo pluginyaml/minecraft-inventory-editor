@@ -13,17 +13,15 @@ interface ItemSelectorProps {
     onSelectItem: (item: MinecraftItem) => void;
     onClose: () => void;
     recentItems: MinecraftItem[];
-    version?: string;
 }
 
 // Cache for Minecraft items
-const cachedItems: { [version: string]: MinecraftItem[] } = {};
+let cachedItems: MinecraftItem[] | null = null;
 
 export default function ItemSelector({
     onSelectItem,
     onClose,
     recentItems,
-    version = "1.21.4",
 }: ItemSelectorProps) {
     const [items, setItems] = useState<MinecraftItem[]>([]);
     const [filteredItems, setFilteredItems] = useState<MinecraftItem[]>([]);
@@ -38,14 +36,14 @@ export default function ItemSelector({
                 setError(null);
 
                 // Use cached items if available
-                if (cachedItems[version]) {
-                    setItems(cachedItems[version]);
-                    setFilteredItems(cachedItems[version]);
+                if (cachedItems) {
+                    setItems(cachedItems);
+                    setFilteredItems(cachedItems);
                     setLoading(false);
                     return;
                 }
 
-                const response = await fetch(`/api/items/${version}`);
+                const response = await fetch(`/items.json`);
 
                 if (!response.ok) {
                     throw new Error(
@@ -53,16 +51,16 @@ export default function ItemSelector({
                     );
                 }
 
-                const data = await response.json();
+                const items: MinecraftItem[] = await response.json();
 
-                if (!data || !data.items || !Array.isArray(data.items)) {
-                    throw new Error("Invalid data format received from API");
+                if (!items || !Array.isArray(items)) {
+                    throw new Error("Invalid data format received");
                 }
 
                 // Cache the fetched items
-                cachedItems[version] = data.items;
-                setItems(data.items);
-                setFilteredItems(data.items);
+                cachedItems = items;
+                setItems(items);
+                setFilteredItems(items);
                 setLoading(false);
             } catch (error) {
                 console.error("Error fetching Minecraft items:", error);
@@ -72,7 +70,7 @@ export default function ItemSelector({
         };
 
         fetchItems();
-    }, [version]);
+    }, []);
 
     useEffect(() => {
         if (searchQuery) {

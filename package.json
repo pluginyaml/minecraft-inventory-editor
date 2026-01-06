@@ -8,7 +8,8 @@
         "build": "next build",
         "start": "next start",
         "check": "biome check .",
-        "fix": "biome check --write ."
+        "fix": "biome check --write .",
+        "download-assets": "tsx scripts/download-assets.ts"
     },
     "dependencies": {
         "@radix-ui/react-dialog": "^1.1.15",
@@ -18,8 +19,6 @@
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "lucide-react": "^0.562.0",
-        "minecraft-assets": "^1.17.0",
-        "minecraft-data": "^3.102.3",
         "next": "16.1.1",
         "react": "^19",
         "react-dom": "^19",
@@ -34,6 +33,7 @@
         "@types/react-dom": "^19",
         "postcss": "^8",
         "tailwindcss": "^4.1.18",
+        "tsx": "^4.19.2",
         "typescript": "^5"
     }
 }
