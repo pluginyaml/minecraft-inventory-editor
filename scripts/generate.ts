@@ -52,7 +52,7 @@ type ItemDefinition = {
 
 type ModelJson =
     | {
-          parent: "minecraft:item/generated";
+          parent: "minecraft:item/generated" | "minecraft:item/handheld";
           textures: {
               layer0: string;
           };
@@ -215,7 +215,8 @@ async function renderModel(
                 return success ? "rendered" : "failed";
             }
 
-            case "minecraft:item/generated": {
+            case "minecraft:item/generated":
+            case "minecraft:item/handheld": {
                 const texturePath = model.textures.layer0;
                 const resolvedTexturePath = resolveTexturePath(texturePath);
                 const textureSourcePath = join(repoRoot, resolvedTexturePath);

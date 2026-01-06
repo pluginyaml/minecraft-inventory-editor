@@ -115,6 +115,11 @@
     "url": "/items/baked_potato.png"
   },
   {
+    "name": "Bamboo",
+    "texture": "bamboo",
+    "url": "/items/bamboo.png"
+  },
+  {
     "name": "Bamboo Chest Raft",
     "texture": "bamboo_chest_raft",
     "url": "/items/bamboo_chest_raft.png"
@@ -240,6 +245,11 @@
     "url": "/items/blaze_powder.png"
   },
   {
+    "name": "Blaze Rod",
+    "texture": "blaze_rod",
+    "url": "/items/blaze_rod.png"
+  },
+  {
     "name": "Blaze Spawn Egg",
     "texture": "blaze_spawn_egg",
     "url": "/items/blaze_spawn_egg.png"
@@ -318,6 +328,11 @@
     "name": "Bread",
     "texture": "bread",
     "url": "/items/bread.png"
+  },
+  {
+    "name": "Breeze Rod",
+    "texture": "breeze_rod",
+    "url": "/items/breeze_rod.png"
   },
   {
     "name": "Breeze Spawn Egg",
@@ -610,6 +625,11 @@
     "url": "/items/cookie.png"
   },
   {
+    "name": "Copper Axe",
+    "texture": "copper_axe",
+    "url": "/items/copper_axe.png"
+  },
+  {
     "name": "Copper Bars",
     "texture": "copper_bars",
     "url": "/items/copper_bars.png"
@@ -645,6 +665,11 @@
     "url": "/items/copper_helmet_quartz_trim.png"
   },
   {
+    "name": "Copper Hoe",
+    "texture": "copper_hoe",
+    "url": "/items/copper_hoe.png"
+  },
+  {
     "name": "Copper Horse Armor",
     "texture": "copper_horse_armor",
     "url": "/items/copper_horse_armor.png"
@@ -675,9 +700,24 @@
     "url": "/items/copper_nugget.png"
   },
   {
+    "name": "Copper Pickaxe",
+    "texture": "copper_pickaxe",
+    "url": "/items/copper_pickaxe.png"
+  },
+  {
+    "name": "Copper Shovel",
+    "texture": "copper_shovel",
+    "url": "/items/copper_shovel.png"
+  },
+  {
     "name": "Copper Spear",
     "texture": "copper_spear",
     "url": "/items/copper_spear.png"
+  },
+  {
+    "name": "Copper Sword",
+    "texture": "copper_sword",
+    "url": "/items/copper_sword.png"
   },
   {
     "name": "Copper Torch",
@@ -850,6 +890,11 @@
     "url": "/items/dead_tube_coral_fan.png"
   },
   {
+    "name": "Debug Stick",
+    "texture": "debug_stick",
+    "url": "/items/debug_stick.png"
+  },
+  {
     "name": "Detector Rail",
     "texture": "detector_rail",
     "url": "/items/detector_rail.png"
@@ -858,6 +903,11 @@
     "name": "Diamond",
     "texture": "diamond",
     "url": "/items/diamond.png"
+  },
+  {
+    "name": "Diamond Axe",
+    "texture": "diamond_axe",
+    "url": "/items/diamond_axe.png"
   },
   {
     "name": "Diamond Boots",
@@ -875,6 +925,11 @@
     "url": "/items/diamond_helmet_quartz_trim.png"
   },
   {
+    "name": "Diamond Hoe",
+    "texture": "diamond_hoe",
+    "url": "/items/diamond_hoe.png"
+  },
+  {
     "name": "Diamond Horse Armor",
     "texture": "diamond_horse_armor",
     "url": "/items/diamond_horse_armor.png"
@@ -890,9 +945,24 @@
     "url": "/items/diamond_nautilus_armor.png"
   },
   {
+    "name": "Diamond Pickaxe",
+    "texture": "diamond_pickaxe",
+    "url": "/items/diamond_pickaxe.png"
+  },
+  {
+    "name": "Diamond Shovel",
+    "texture": "diamond_shovel",
+    "url": "/items/diamond_shovel.png"
+  },
+  {
     "name": "Diamond Spear",
     "texture": "diamond_spear",
     "url": "/items/diamond_spear.png"
+  },
+  {
+    "name": "Diamond Sword",
+    "texture": "diamond_sword",
+    "url": "/items/diamond_sword.png"
   },
   {
     "name": "Disc Fragment 5",
@@ -1220,6 +1290,11 @@
     "url": "/items/golden_apple.png"
   },
   {
+    "name": "Golden Axe",
+    "texture": "golden_axe",
+    "url": "/items/golden_axe.png"
+  },
+  {
     "name": "Golden Boots",
     "texture": "golden_boots_quartz_trim",
     "url": "/items/golden_boots_quartz_trim.png"
@@ -1240,6 +1315,11 @@
     "url": "/items/golden_helmet_quartz_trim.png"
   },
   {
+    "name": "Golden Hoe",
+    "texture": "golden_hoe",
+    "url": "/items/golden_hoe.png"
+  },
+  {
     "name": "Golden Horse Armor",
     "texture": "golden_horse_armor",
     "url": "/items/golden_horse_armor.png"
@@ -1255,9 +1335,24 @@
     "url": "/items/golden_nautilus_armor.png"
   },
   {
+    "name": "Golden Pickaxe",
+    "texture": "golden_pickaxe",
+    "url": "/items/golden_pickaxe.png"
+  },
+  {
+    "name": "Golden Shovel",
+    "texture": "golden_shovel",
+    "url": "/items/golden_shovel.png"
+  },
+  {
     "name": "Golden Spear",
     "texture": "golden_spear",
     "url": "/items/golden_spear.png"
+  },
+  {
+    "name": "Golden Sword",
+    "texture": "golden_sword",
+    "url": "/items/golden_sword.png"
   },
   {
     "name": "Gray Candle",
@@ -1400,6 +1495,11 @@
     "url": "/items/ink_sac.png"
   },
   {
+    "name": "Iron Axe",
+    "texture": "iron_axe",
+    "url": "/items/iron_axe.png"
+  },
+  {
     "name": "Iron Bars",
     "texture": "iron_bars",
     "url": "/items/iron_bars.png"
@@ -1435,6 +1535,11 @@
     "url": "/items/iron_helmet_quartz_trim.png"
   },
   {
+    "name": "Iron Hoe",
+    "texture": "iron_hoe",
+    "url": "/items/iron_hoe.png"
+  },
+  {
     "name": "Iron Horse Armor",
     "texture": "iron_horse_armor",
     "url": "/items/iron_horse_armor.png"
@@ -1460,9 +1565,24 @@
     "url": "/items/iron_nugget.png"
   },
   {
+    "name": "Iron Pickaxe",
+    "texture": "iron_pickaxe",
+    "url": "/items/iron_pickaxe.png"
+  },
+  {
+    "name": "Iron Shovel",
+    "texture": "iron_shovel",
+    "url": "/items/iron_shovel.png"
+  },
+  {
     "name": "Iron Spear",
     "texture": "iron_spear",
     "url": "/items/iron_spear.png"
+  },
+  {
+    "name": "Iron Sword",
+    "texture": "iron_sword",
+    "url": "/items/iron_sword.png"
   },
   {
     "name": "Item Frame",
@@ -1820,6 +1940,11 @@
     "url": "/items/nether_wart.png"
   },
   {
+    "name": "Netherite Axe",
+    "texture": "netherite_axe",
+    "url": "/items/netherite_axe.png"
+  },
+  {
     "name": "Netherite Boots",
     "texture": "netherite_boots_quartz_trim",
     "url": "/items/netherite_boots_quartz_trim.png"
@@ -1833,6 +1958,11 @@
     "name": "Netherite Helmet",
     "texture": "netherite_helmet_quartz_trim",
     "url": "/items/netherite_helmet_quartz_trim.png"
+  },
+  {
+    "name": "Netherite Hoe",
+    "texture": "netherite_hoe",
+    "url": "/items/netherite_hoe.png"
   },
   {
     "name": "Netherite Horse Armor",
@@ -1855,14 +1985,29 @@
     "url": "/items/netherite_nautilus_armor.png"
   },
   {
+    "name": "Netherite Pickaxe",
+    "texture": "netherite_pickaxe",
+    "url": "/items/netherite_pickaxe.png"
+  },
+  {
     "name": "Netherite Scrap",
     "texture": "netherite_scrap",
     "url": "/items/netherite_scrap.png"
   },
   {
+    "name": "Netherite Shovel",
+    "texture": "netherite_shovel",
+    "url": "/items/netherite_shovel.png"
+  },
+  {
     "name": "Netherite Spear",
     "texture": "netherite_spear",
     "url": "/items/netherite_spear.png"
+  },
+  {
+    "name": "Netherite Sword",
+    "texture": "netherite_sword",
+    "url": "/items/netherite_sword.png"
   },
   {
     "name": "Netherite Upgrade Smithing Template",
@@ -2595,9 +2740,39 @@
     "url": "/items/squid_spawn_egg.png"
   },
   {
+    "name": "Stick",
+    "texture": "stick",
+    "url": "/items/stick.png"
+  },
+  {
+    "name": "Stone Axe",
+    "texture": "stone_axe",
+    "url": "/items/stone_axe.png"
+  },
+  {
+    "name": "Stone Hoe",
+    "texture": "stone_hoe",
+    "url": "/items/stone_hoe.png"
+  },
+  {
+    "name": "Stone Pickaxe",
+    "texture": "stone_pickaxe",
+    "url": "/items/stone_pickaxe.png"
+  },
+  {
+    "name": "Stone Shovel",
+    "texture": "stone_shovel",
+    "url": "/items/stone_shovel.png"
+  },
+  {
     "name": "Stone Spear",
     "texture": "stone_spear",
     "url": "/items/stone_spear.png"
+  },
+  {
+    "name": "Stone Sword",
+    "texture": "stone_sword",
+    "url": "/items/stone_sword.png"
   },
   {
     "name": "Stray Spawn Egg",
@@ -3025,9 +3200,34 @@
     "url": "/items/wolf_spawn_egg.png"
   },
   {
+    "name": "Wooden Axe",
+    "texture": "wooden_axe",
+    "url": "/items/wooden_axe.png"
+  },
+  {
+    "name": "Wooden Hoe",
+    "texture": "wooden_hoe",
+    "url": "/items/wooden_hoe.png"
+  },
+  {
+    "name": "Wooden Pickaxe",
+    "texture": "wooden_pickaxe",
+    "url": "/items/wooden_pickaxe.png"
+  },
+  {
+    "name": "Wooden Shovel",
+    "texture": "wooden_shovel",
+    "url": "/items/wooden_shovel.png"
+  },
+  {
     "name": "Wooden Spear",
     "texture": "wooden_spear",
     "url": "/items/wooden_spear.png"
+  },
+  {
+    "name": "Wooden Sword",
+    "texture": "wooden_sword",
+    "url": "/items/wooden_sword.png"
   },
   {
     "name": "Writable Book",
