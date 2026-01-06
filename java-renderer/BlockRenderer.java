@@ -213,10 +213,14 @@ public class BlockRenderer {
                 if (v < 0.0) v = 0.0;
                 if (v > 1.0) v = 1.0;
 
-                int texX = (int)Math.floor(u * texture.getWidth());
-                int texY = (int)Math.floor(v * texture.getHeight());
-                if (texX >= texture.getWidth()) texX = texture.getWidth() - 1;
-                if (texY >= texture.getHeight()) texY = texture.getHeight() - 1;
+                // If the texture is taller than wide (animation sheet), only use the first frame:
+                // we treat a square region of size (width x width) starting from the top.
+                int frameSize = Math.min(texture.getWidth(), texture.getHeight());
+
+                int texX = (int)Math.floor(u * frameSize);
+                int texY = (int)Math.floor(v * frameSize);
+                if (texX >= frameSize) texX = frameSize - 1;
+                if (texY >= frameSize) texY = frameSize - 1;
 
                 int rgb = texture.getRGB(texX, texY);
                 int alpha = (rgb >> 24) & 0xFF;

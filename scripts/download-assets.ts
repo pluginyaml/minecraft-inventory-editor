@@ -1,14 +1,7 @@
 #!/usr/bin/env node
 
 import { execSync } from "node:child_process";
-import {
-    cpSync,
-    existsSync,
-    mkdirSync,
-    readFileSync,
-    rmSync,
-    writeFileSync,
-} from "node:fs";
+import { cpSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 interface GitHubBranch {
@@ -286,20 +279,18 @@ function prepareLocalRepo(version: string): string {
         mkdirSync(cacheRoot, { recursive: true });
     }
 
-    if (existsSync(repoRoot)) {
-        rmSync(repoRoot, { recursive: true, force: true });
-    }
-
     const repoUrl =
         "https://github.com/InventivetalentDev/minecraft-assets.git";
 
+    if (existsSync(repoRoot)) {
+        console.log(`Using cached repository at ${repoRoot}`);
+        return repoRoot;
+    }
+
     console.log(`Cloning ${repoUrl} (branch ${version}) into ${repoRoot}...`);
-    execSync(
-        `git clone --depth 1 --branch ${version} ${repoUrl} "${repoRoot}"`,
-        {
-            stdio: "inherit",
-        },
-    );
+    execSync(`git clone --depth 1 --branch ${version} ${repoUrl} "${repoRoot}"`, {
+        stdio: "inherit",
+    });
 
     return repoRoot;
 }
