@@ -32,7 +32,7 @@ npm run dev
 To prepare item images locally, use the download script. The script automatically fetches the latest version from [InventivetalentDev/minecraft-assets](https://github.com/InventivetalentDev/minecraft-assets), clones the repository, and copies all item textures:
 
 ```bash
-npm run download-assets
+npm run generate
 ```
 
 The script will:

@@ -1,7 +1,13 @@
 #!/usr/bin/env node
 
 import { execSync } from "node:child_process";
-import { cpSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import {
+    cpSync,
+    existsSync,
+    mkdirSync,
+    readFileSync,
+    writeFileSync,
+} from "node:fs";
 import { join } from "node:path";
 
 interface GitHubBranch {
@@ -197,9 +203,14 @@ async function renderModel(
 
         switch (parent) {
             case "minecraft:block/cube_all": {
-                const texturePath = model.textures?.all || model.textures?.layer0;
+                const texturePath =
+                    model.textures?.all || model.textures?.layer0;
                 if (!texturePath) return "failed";
-                const success = await renderCubeAll(repoRoot, texturePath, outputPath);
+                const success = await renderCubeAll(
+                    repoRoot,
+                    texturePath,
+                    outputPath,
+                );
                 return success ? "rendered" : "failed";
             }
 
@@ -241,7 +252,9 @@ async function renderCubeAll(
         const classFile = join(javaDir, "BlockRenderer.class");
 
         if (!existsSync(classFile)) {
-            console.warn("Java renderer not compiled. Attempting to compile...");
+            console.warn(
+                "Java renderer not compiled. Attempting to compile...",
+            );
             compileJavaRenderer();
             if (!existsSync(classFile)) {
                 console.error("Java renderer compilation failed");
@@ -288,14 +301,17 @@ function prepareLocalRepo(version: string): string {
     }
 
     console.log(`Cloning ${repoUrl} (branch ${version}) into ${repoRoot}...`);
-    execSync(`git clone --depth 1 --branch ${version} ${repoUrl} "${repoRoot}"`, {
-        stdio: "inherit",
-    });
+    execSync(
+        `git clone --depth 1 --branch ${version} ${repoUrl} "${repoRoot}"`,
+        {
+            stdio: "inherit",
+        },
+    );
 
     return repoRoot;
 }
 
-async function downloadAssets(): Promise<void> {
+async function generate(): Promise<void> {
     const type = "items";
 
     console.log("Fetching latest version from GitHub...");
@@ -329,103 +345,67 @@ async function downloadAssets(): Promise<void> {
         let copied = 0;
         let rendered = 0;
         let failed = 0;
-        const logEntries: Array<{
-            itemName: string;
-            texture: string;
-            sourcePath?: string;
-            status: "copied" | "rendered" | "failed";
-            reason?: string;
-        }> = [];
 
-        for (let i = 0; i < itemNames.length; i++) {
-            const itemName = itemNames[i];
-            const itemDef = allItems[itemName];
+        await Promise.all(
+            itemNames.map(async (itemName, index) => {
+                const itemDef = allItems[itemName];
 
-            let modelPath: string | null = null;
-            if (
-                itemDef.model &&
-                typeof itemDef.model === "object" &&
-                "model" in itemDef.model
-            ) {
-                const model = itemDef.model as ItemModel;
-                if (model.type === "minecraft:model") {
-                    modelPath = model.model;
+                let modelPath: string | null = null;
+                if (
+                    itemDef.model &&
+                    typeof itemDef.model === "object" &&
+                    "model" in itemDef.model
+                ) {
+                    const model = itemDef.model as ItemModel;
+                    if (model.type === "minecraft:model") {
+                        modelPath = model.model;
+                    }
                 }
-            }
 
-            if (!modelPath) {
-                const reason = "no valid model path";
-                console.warn(`Skipping ${itemName}: ${reason}`);
-                logEntries.push({
-                    itemName,
-                    texture: "",
-                    status: "failed",
-                    reason,
-                });
-                failed++;
-                continue;
-            }
+                if (!modelPath) {
+                    const reason = "no valid model path";
+                    console.warn(`Skipping ${itemName}: ${reason}`);
+                    failed++;
+                    return;
+                }
 
-            const textureName =
-                modelPath.split("/").pop()?.replace("minecraft:", "") ||
-                itemName;
-            const fileName = `${textureName}.png`;
-            const filePath = join(outputDir, fileName);
+                const textureName =
+                    modelPath.split("/").pop()?.replace("minecraft:", "") ||
+                    itemName;
+                const fileName = `${textureName}.png`;
+                const filePath = join(outputDir, fileName);
 
-            const result = await renderModel(repoRoot, modelPath, filePath);
+                const result = await renderModel(repoRoot, modelPath, filePath);
 
-            if (result === "copied") {
-                copied++;
-                logEntries.push({
-                    itemName,
-                    texture: textureName,
-                    sourcePath: modelPath,
-                    status: "copied",
-                });
-            } else if (result === "rendered") {
-                rendered++;
-                logEntries.push({
-                    itemName,
-                    texture: textureName,
-                    sourcePath: modelPath,
-                    status: "rendered",
-                });
-            } else {
-                const reason = "renderModel returned failed";
-                logEntries.push({
-                    itemName,
-                    texture: textureName,
-                    sourcePath: modelPath,
-                    status: "failed",
-                    reason,
-                });
-                failed++;
-            }
+                switch (result) {
+                    case "copied":
+                        copied++;
+                        break;
+                    case "rendered":
+                        rendered++;
+                        break;
+                    default:
+                        failed++;
+                        break;
+                }
 
-            if (result !== "failed") {
-                items.push({
-                    name: itemNameToDisplayName(itemName),
-                    texture: textureName,
-                    url: `/${type}/${fileName}`,
-                });
-            }
+                if (result !== "failed") {
+                    items.push({
+                        name: itemNameToDisplayName(itemName),
+                        texture: textureName,
+                        url: `/${type}/${fileName}`,
+                    });
+                }
 
-            console.log(
-                `\r[${i + 1}/${itemNames.length}] Copied: ${copied}, Rendered: ${rendered}, Failed: ${failed}`,
-            );
-
-            // Small delay to avoid rate limiting
-            await new Promise((resolve) => setTimeout(resolve, 50));
-        }
+                console.log(
+                    `\r[${index + 1}/${itemNames.length}] Copied: ${copied}, Rendered: ${rendered}, Failed: ${failed}`,
+                );
+            }),
+        );
 
         const itemsJsonPath = join(process.cwd(), "public", "items.json");
         writeFileSync(itemsJsonPath, JSON.stringify(items, null, 2));
         console.log(`\n\nItems list saved to: ${itemsJsonPath}`);
-
-        // ログファイルを出力
-        const logPath = join(process.cwd(), "public", "items-copy-log.json");
-        writeFileSync(logPath, JSON.stringify(logEntries, null, 2));
-        console.log(`Log file saved to: ${logPath}`);
 
         console.log(`\nAsset copy complete!`);
         console.log(`  Copied: ${copied}`);
@@ -439,7 +419,7 @@ async function downloadAssets(): Promise<void> {
     }
 }
 
-downloadAssets().catch((error) => {
+generate().catch((error) => {
     console.error("Fatal error:", error);
     process.exit(1);
 });

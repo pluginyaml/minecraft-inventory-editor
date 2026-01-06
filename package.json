@@ -9,7 +9,7 @@
         "start": "next start",
         "check": "biome check .",
         "fix": "biome check --write .",
-        "download-assets": "javac java-renderer/BlockRenderer.java && tsx scripts/download-assets.ts"
+        "generate": "javac java-renderer/BlockRenderer.java && tsx scripts/generate.ts"
     },
     "dependencies": {
         "@radix-ui/react-dialog": "^1.1.15",
