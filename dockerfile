@@ -2,6 +2,9 @@
 FROM node:20.11-alpine AS builder
 WORKDIR /app
 
+# <-- DAS FEHLT BEI DIR: git fürs generate (clone) + ca-certs für https
+RUN apk add --no-cache git ca-certificates
+
 # deps
 COPY package.json package-lock.json ./
 RUN npm ci
@@ -24,7 +27,6 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=3000
 
-# copy only what we need
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/next.config.mjs ./next.config.mjs
